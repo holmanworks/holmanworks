@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes move-x {
+  0% {
+    transform: translateX(var(--move-x-from));
+  }
+  100% {
+    transform: translateX(var(--move-x-to));
+  }
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: -12px; /* Adjust based on your gap */
+  width: 100%;
+}
+.masonry-grid-column {
+  padding-left: 12px; /* Adjust based on your gap */
+  background-clip: padding-box;
+}
+.masonry-grid img {
+  margin-bottom: 12px; /* Adjust spacing between items */
+}
