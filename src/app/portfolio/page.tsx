@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer";
 import { GradientBackground } from "@/components/gradient";
 import { Navbar } from "@/components/navbar";
 import Masonry from "react-masonry-css";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const boardData = [
   {

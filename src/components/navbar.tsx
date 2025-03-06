@@ -90,7 +90,7 @@ function SocialLinks() {
         href="https://www.linkedin.com/in/holmanworks/"
         target="_blank"
         aria-label="Visit us on LinkedIn"
-        className="text-gray-950/80 data-[hover]:text-[#0077b5] px-4 py-3 items-center flex bg-blend-multiply data-[hover]:bg-black/[2.5%]"
+        className="text-gray-950/80 data-[hover]:text-[#0077b5] p-5 items-center flex bg-blend-multiply data-[hover]:bg-black/[2.5%]"
       >
         <SocialIconLinkedIn className="size-5" />
       </Link>
