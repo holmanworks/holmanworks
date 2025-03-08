@@ -21,49 +21,49 @@ import { ArrowRightIcon, ChevronRightIcon, ChevronLeftIcon } from '@heroicons/re
 const testimonials = [
   {
     img: '/screenshots/case-solve.png',
-    name: 'Forethought Solve - Workflow Builder',
+    name: 'Forethought - Customer Service Workflow Builder',
     title: 'Build intricate workflows easily',
-    url: 'https://docs.google.com/presentation/d/1T3s0EdzQTvZrvO69eNFc730rWkrYJ6135sFgi0o2EYc/edit#slide=id.g2bdd7d84be1_1_442',
-  },
-  {
-    img: '/screenshots/case-ft-widget.png',
-    name: 'Forethought Solve - Widget',
-    title: 'Revamp the widget interface to enhance user experience',
-    url: 'https://docs.google.com/presentation/d/1T3s0EdzQTvZrvO69eNFc730rWkrYJ6135sFgi0o2EYc/edit#slide=id.g2bdd7d84be1_1_629',
-  },
-  {
-    img: '/screenshots/case-playground.png',
-    name: 'Forethought SupportGPT - Playground',
-    title: "Gen AI for customer support automation, with Open AI's ChatGPT",
-    url: 'https://docs.google.com/presentation/d/1T3s0EdzQTvZrvO69eNFc730rWkrYJ6135sFgi0o2EYc/edit#slide=id.g2bdd7d84be1_1_641',
-  },
-  {
-    img: '/screenshots/case-assist.png',
-    name: 'Forethought Assist - Generate Response with SupportGPT',
-    title: 'Agents get suggested response based on ticket context and powered by Gen AI',
-    url: 'https://docs.google.com/presentation/d/1T3s0EdzQTvZrvO69eNFc730rWkrYJ6135sFgi0o2EYc/edit#slide=id.g2bdd7d84be1_1_652',
-  },
-  {
-    img: '/screenshots/case-discover.png',
-    name: 'Forethought Discover - Automation',
-    title: 'Emphasize the values that drive the Call-To-Action',
-    url: 'https://docs.google.com/presentation/d/1T3s0EdzQTvZrvO69eNFc730rWkrYJ6135sFgi0o2EYc/edit#slide=id.g2bdd7d84be1_1_663',
+    url: 'https://docs.google.com/presentation/d/1wBCmaenxcehNCNh65VSPwlbsloMA2uk5Puxx_CLkcn4/edit?usp=sharing',
   },
   {
     img: '/screenshots/case-oursong.png',
     name: 'OurSong - Music NFT + VIP Community',
     title: 'Transforming a music NFT marketplace into an exclusion VIP community',
-    url: 'https://docs.google.com/presentation/d/1T3s0EdzQTvZrvO69eNFc730rWkrYJ6135sFgi0o2EYc/edit#slide=id.g2bdd7d84be1_1_674',
+    url: 'https://docs.google.com/presentation/d/1IMigIkFY0sp1qgTIAt0_bT9uuQfmP4BniAkkH8pW52c/edit?usp=sharing',
+  },
+  {
+    img: '/screenshots/case-ft-widget.png',
+    name: 'Forethought - Customer Service Widget',
+    title: 'Revamp the widget interface to enhance user experience',
+    url: 'https://docs.google.com/presentation/d/1qXSxnLgPCCti5Y3VjjzrLzf_XZaH0GJZlH65s7t8vwM/edit?usp=sharing',
+  },
+  {
+    img: '/screenshots/case-playground.png',
+    name: 'Forethought - SupportGPT Playground',
+    title: "Gen AI for customer support automation, with Open AI's ChatGPT",
+    url: 'https://docs.google.com/presentation/d/1N5_5yJyH4pVq8CyQ-w7tG5CL3t1_JFky0WLlka7G7gM/edit?usp=sharing',
+  },
+  {
+    img: '/screenshots/case-assist.png',
+    name: 'Forethought - Generate Response with SupportGPT',
+    title: 'Agents get suggested response based on ticket context and powered by Gen AI',
+    url: 'https://docs.google.com/presentation/d/1ZeggOX9cvm2repa_423idjjRztpRyQeghJXlVmJLNbk/edit?usp=sharing',
+  },
+  {
+    img: '/screenshots/case-discover.png',
+    name: 'Forethought - AI Powered Support Insights',
+    title: 'Emphasize the values that drive the Call-To-Action',
+    url: 'https://docs.google.com/presentation/d/10s_ugsKWGptHvVwPZZi7R4kTFxacGKfArbnvugo-a5A/edit?usp=sharing',
   },
   {
     img: '/screenshots/case-ti8.png',
     name: 'Trend Micro Internet Security',
     title: 'Reimagine a leading global antivirus software with a modern design',
-    url: 'https://docs.google.com/presentation/d/1T3s0EdzQTvZrvO69eNFc730rWkrYJ6135sFgi0o2EYc/edit#slide=id.g2bdd7d84be1_1_817',
+    url: 'https://docs.google.com/presentation/d/1QgG-uXN-LPTDIrJbH6vhsX7UqtS226L4A1iWBwaftrM/edit?usp=sharing',
   },
 ]
 
-function TestimonialCard({
+function CaseStudyCard({
   name,
   title,
   img,
@@ -152,7 +152,7 @@ function TestimonialCard({
 }
 
 
-export function Testimonials() {
+export function CaseStudies() {
   let scrollRef = useRef<HTMLDivElement | null>(null);
   let { scrollX } = useScroll({ container: scrollRef });
   let [setReferenceWindowRef, bounds] = useMeasure();
@@ -217,7 +217,7 @@ export function Testimonials() {
         ])}
       >
         {testimonials.map(({ img, name, title, url }, testimonialIndex) => (
-          <TestimonialCard
+          <CaseStudyCard
             key={testimonialIndex}
             name={name}
             title={title}

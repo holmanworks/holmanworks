@@ -11,7 +11,7 @@ import { LogoCluster } from '@/components/logo-cluster'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
-import { Testimonials } from '@/components/testimonials'
+import { CaseStudies } from '@/components/casestudies'
 import { Heading, Subheading } from '@/components/text'
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import type { Metadata } from 'next'
@@ -28,19 +28,19 @@ function Hero() {
 
         <Navbar/>
 
-        <div className="flex flex-col justify-start md:pb-36 md:pt-32 sm:pb-24 sm:pt-20 pb-20 pt-16">
+        <div className="flex flex-col justify-center xl:h-[600px] lg:h-[500px] h-[400px]">
 
           <div className="sm:text-6xl text-4xl font-bold sm:tracking-tight text-gray-950 sm:mb-1 mb-0">
             holman
           </div>
 
-          <div className="sm:text-3xl text-2xl font-normal font-serif text-gray-950 mb-6">
+          <div className="sm:text-3xl text-xl font-normal font-serif text-gray-950 mb-6">
             [ <span className='italic'>Design consultant / Design leader / Designer</span> ]
           </div>
 
           <div className='w-1/4 h-[2px] bg-gray-950'></div>
 
-          <div className="sm:text-2xl text-lg font-mono max-w-[640px] font-normal text-gray-950 mt-6">
+          <div className="sm:text-2xl text-base font-mono max-w-[640px] font-normal text-gray-950 mt-6">
             : specialize in UI/UX, product development, brand strategy, design strategy, art direction, prototyping, front-end development, and concept creation.
           </div>
 
@@ -79,7 +79,7 @@ function BentoSection() {
         <div className=" grid gap-4 sm:mt-16 mt-10 lg:grid-cols-6 grid-cols-1 lg:grid-rows-2">
           <BentoCard
             title=""
-            description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+            description=""
             graphic={
               <div className="h-full bg-[url(/screenshots/types/ai.png)] bg-contain bg-no-repeat bg-center" />
             }
@@ -91,31 +91,7 @@ function BentoSection() {
 
           <BentoCard
             title=""
-            description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
-            graphic={
-              <div className="h-full bg-[url(/screenshots/makesheets/preview.png)] bg-contain bg-no-repeat bg-center" />
-            }
-            hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/makesheets/practice.png)] bg-contain bg-no-repeat bg-center" />
-            }
-            className="lg:col-span-2 bg-rose-200/70"
-          />
-          
-          <BentoCard
-            title=""
-            description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
-            graphic={
-              <div className="h-full bg-[url(/screenshots/penyo/home.png)] bg-contain bg-no-repeat bg-center" />
-            }
-            hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/penyo/gender.png)] bg-contain bg-no-repeat bg-center" />
-            }
-            className="lg:col-span-2 bg-teal-200/70"
-          />
-
-          <BentoCard
-            title=""
-            description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+            description=""
             graphic={
               <div className="h-full bg-[url(/screenshots/ft-solve/builder.png)] bg-contain bg-no-repeat bg-center" />
             }
@@ -127,7 +103,19 @@ function BentoSection() {
 
           <BentoCard
             title=""
-            description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+            description=""
+            graphic={
+              <div className="h-full bg-[url(/screenshots/makesheets/preview.png)] bg-contain bg-no-repeat bg-center" />
+            }
+            hoverGraphic={
+              <div className="h-full bg-[url(/screenshots/makesheets/practice.png)] bg-contain bg-no-repeat bg-center" />
+            }
+            className="lg:col-span-2 bg-rose-200/70"
+          />
+          
+          <BentoCard
+            title=""
+            description=""
             graphic={
               <div className="h-full bg-[url(/screenshots/ft-discover-dashboard.png)] bg-contain bg-no-repeat bg-center" />
             }
@@ -136,10 +124,10 @@ function BentoSection() {
             }
             className="lg:col-span-2 bg-amber-200/60"
           />
-
+          
           <BentoCard
             title=""
-            description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+            description=""
             graphic={
               <div className="h-full bg-[url(/screenshots/oursong/home.png)] bg-contain bg-no-repeat bg-center" />
             }
@@ -148,6 +136,19 @@ function BentoSection() {
             }
             className="lg:col-span-2 bg-fuchsia-200/60"
           />
+
+          <BentoCard
+            title=""
+            description=""
+            graphic={
+              <div className="h-full bg-[url(/screenshots/penyo/home.png)] bg-contain bg-no-repeat bg-center" />
+            }
+            hoverGraphic={
+              <div className="h-full bg-[url(/screenshots/penyo/gender.png)] bg-contain bg-no-repeat bg-center" />
+            }
+            className="lg:col-span-2 bg-teal-200/70"
+          />
+
         </div>
 
       </Link>
@@ -174,7 +175,7 @@ export default function Home() {
 
       </main>
 
-      <Testimonials />
+      <CaseStudies />
 
       <Footer />
 

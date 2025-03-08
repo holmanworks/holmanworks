@@ -7,7 +7,7 @@ export function LogoCloud({
     <div
       className={clsx(
         className,
-        'flex items-center justify-between max-sm:mx-auto max-sm:max-w-md max-sm:flex-wrap max-sm:justify-evenly max-sm:gap-x-4 max-sm:gap-y-4',
+        'flex items-center justify-between max-sm:mx-auto max-sm:max-w-md max-md:flex-wrap max-md:justify-evenly gap-x-4 gap-y-4',
       )}
     >
       <img
