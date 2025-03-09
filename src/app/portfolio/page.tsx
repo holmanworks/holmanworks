@@ -53,7 +53,7 @@ const boardData = [
       "/screenshots/ft-solve/preview.png",
       "/screenshots/ft-solve/preview2.png",
     ],
-    name: "Forethought - Customer Service Workflow Builder",
+    name: "Forethought - Customer service workflow builder",
     column: 4,
   },
   {
@@ -79,6 +79,19 @@ const boardData = [
     ],
     name: "OurSong - Music NFT",
     column: 8,
+  },
+  {
+    images: [
+      "/screenshots/ft-discover/dashboard.png",
+      "/screenshots/ft-discover/impact.png",
+      "/screenshots/ft-discover/details.png",
+      "/screenshots/ft-discover/article.png",
+      "/screenshots/ft-discover/table.png",
+      "/screenshots/ft-discover/filter1.png",
+      "/screenshots/ft-discover/filter2.png",
+    ],
+    name: "Forethought - AI powered support insights",
+    column: 4,
   },
   {
     images: [

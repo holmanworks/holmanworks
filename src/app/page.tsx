@@ -23,24 +23,24 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
-      <Gradient className="absolute inset-2 bottom-0 rounded-[32px] ring-1 ring-inset ring-black/5" />
+      <Gradient className="absolute xl:inset-4 lg:inset-3 md:inset-3 sm:inset-3 inset-2 bottom-0 rounded-[32px] ring-1 ring-inset ring-black/5" />
       <Container className="relative">
 
         <Navbar/>
 
-        <div className="flex flex-col justify-center xl:h-[600px] lg:h-[500px] h-[400px]">
+        <div className="flex flex-col justify-center xl:h-[600px] lg:h-[500px] h-[450px]">
 
           <div className="sm:text-6xl text-4xl font-bold sm:tracking-tight text-gray-950 sm:mb-1 mb-0">
             holman
           </div>
 
-          <div className="sm:text-3xl text-xl font-normal font-serif text-gray-950 mb-6">
+          <div className="lg:text-3xl md:text-2xl sm:text-2xl text-xl font-normal font-serif text-gray-950 mb-6">
             [ <span className='italic'>Design consultant / Design leader / Designer</span> ]
           </div>
 
           <div className='w-1/4 h-[2px] bg-gray-950'></div>
 
-          <div className="sm:text-2xl text-base font-mono max-w-[640px] font-normal text-gray-950 mt-6">
+          <div className="lg:text-2xl md:text-xl sm:text-lg text-base font-mono max-w-[700px] font-normal text-gray-950 mt-6">
             : specialize in UI/UX, product development, brand strategy, design strategy, art direction, prototyping, front-end development, and concept creation.
           </div>
 
@@ -117,10 +117,10 @@ function BentoSection() {
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/ft-discover-dashboard.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/ft-discover/thumbnail1.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/ft-discover-automation.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/ft-discover/thumbnail2.png)] bg-contain bg-no-repeat bg-center" />
             }
             className="lg:col-span-2 bg-amber-200/60"
           />
