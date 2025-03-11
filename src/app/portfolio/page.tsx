@@ -95,6 +95,15 @@ const boardData = [
   },
   {
     images: [
+      "/screenshots/ft-playground/signup.png",
+      "/screenshots/ft-playground/sample.png",
+      "/screenshots/ft-playground/playground.png",
+    ],
+    name: "Forethought - SupportGPT Playground",
+    column: 4,
+  },
+  {
+    images: [
       "/screenshots/penyo/signin.png",
       "/screenshots/penyo/gender.png",
       "/screenshots/penyo/name.png",
@@ -105,8 +114,8 @@ const boardData = [
       "/screenshots/penyo/configuration.png",
       "/screenshots/penyo/setting.png",
       "/screenshots/penyo/usecase.png",
-      "/screenshots/penyo/newsenior.png",
-      "/screenshots/penyo/metrics.png",
+      "/screenshots/penyo/style.png",
+      "/screenshots/penyo/logo.png",
     ],
     name: "Penyo - AI companion for elderly",
     column: 4,
@@ -125,7 +134,7 @@ function Board({ name, images, column }: { name: string; images: string[]; colum
       } else if (window.innerWidth >= 480 && window.innerWidth < 768) {
         newColumns = column === 8 ? 3 : 2;
       } else if (window.innerWidth >= 768 && window.innerWidth < 1280) {
-        newColumns = column === 8 ? 4 : 3;
+        newColumns = column === 8 ? 5 : 3;
       } else if (window.innerWidth >= 1280 && window.innerWidth < 1440) {
         newColumns = column === 8 ? 6 : 4;
       } else {

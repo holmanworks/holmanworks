@@ -176,14 +176,14 @@ export function CaseStudies() {
       <Container>
         <div className="flex items-center gap-4">
           {/* Title */}
-          <Link href="/case" aria-label="Case Studies" className="flex flex-1">
-            <div className="sm:text-7xl text-5xl font-medium text-gray-950 sm:tracking-tight flex items-center gap-x-2 hover:gap-x-4 transition-all duration-300 ease-in-out">
+          <Link href="/case" aria-label="Case Studies" className="w-full">
+            <div className="sm:text-9xl text-7xl font-bold text-gray-800 flex items-center gap-x-4 hover:gap-x-6 transition-all duration-300 ease-in-out">
               Case Studies
               <ArrowRightIcon className="size-8" />
             </div>
           </Link>
 
-          <div className='flex gap-4'>
+          <div className="flex gap-4 hidden md:flex">
             {/* Left Arrow Button */}
             <button
               onClick={() => scrollTo(Math.max(activeIndex - 1, 0))}
@@ -210,7 +210,7 @@ export function CaseStudies() {
       <div
         ref={scrollRef}
         className={clsx([
-          'sm:mt-16 mt-8 flex sm:gap-8 gap-6 px-[var(--scroll-padding)]',
+          'sm:mt-12 mt-8 flex sm:gap-8 gap-6 px-[var(--scroll-padding)]',
           '[scrollbar-width:none] [&::-webkit-scrollbar]:hidden',
           'snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-smooth',
           '[--scroll-padding:max(theme(spacing.6),calc((100vw-720px)/2))] lg:[--scroll-padding:max(theme(spacing.8),calc((100vw-1280px)/2))]',

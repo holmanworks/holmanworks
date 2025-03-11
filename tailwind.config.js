@@ -48,15 +48,15 @@ module.exports = {
         }],
         '7xl':['48px',{
           lineHeight: '50px',
-          letterSpacing: '-.5px',
+          letterSpacing: '-2px',
         }],
         '8xl':['56px',{
           lineHeight: '58px',
-          letterSpacing: '-.5px',
+          letterSpacing: '-2px',
         }],
         '9xl':['64px',{
           lineHeight: '66px',
-          letterSpacing: '-1px',
+          letterSpacing: '-3px',
         }],
         '10xl':['72px',{
           lineHeight: '72px',

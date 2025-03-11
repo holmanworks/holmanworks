@@ -30,17 +30,17 @@ function Hero() {
 
         <div className="flex flex-col justify-center xl:h-[600px] lg:h-[500px] h-[450px]">
 
-          <div className="sm:text-6xl text-4xl font-bold sm:tracking-tight text-gray-950 sm:mb-1 mb-0">
+          <div className="sm:text-6xl text-4xl font-bold sm:tracking-tight text-gray-800 sm:mb-1 mb-0">
             holman
           </div>
 
-          <div className="lg:text-3xl md:text-2xl sm:text-2xl text-xl font-normal font-serif text-gray-950 mb-6">
+          <div className="lg:text-3xl md:text-2xl sm:text-2xl text-xl font-normal font-serif text-gray-800 mb-6">
             [ <span className='italic'>Design consultant / Design leader / Designer</span> ]
           </div>
 
           <div className='w-1/4 h-[2px] bg-gray-950'></div>
 
-          <div className="lg:text-2xl md:text-xl sm:text-lg text-base font-mono max-w-[700px] font-normal text-gray-950 mt-6">
+          <div className="lg:text-2xl md:text-xl sm:text-lg text-base font-mono max-w-[700px] font-normal text-gray-800 mt-6">
             : specialize in UI/UX, product development, brand strategy, design strategy, art direction, prototyping, front-end development, and concept creation.
           </div>
 
@@ -71,12 +71,12 @@ function BentoSection() {
         className="flex flex-col"
       >
 
-        <div className="sm:text-7xl text-5xl font-medium text-gray-950 sm:tracking-tight flex items-center gap-x-2 hover:gap-x-4 transition-all duration-300 ease-in-out">
-          Latest Projects
+        <div className="sm:text-9xl text-7xl font-bold text-gray-800 flex items-center gap-x-4 hover:gap-x-6 transition-all duration-300 ease-in-out">
+          Showcase
           <ArrowRightIcon className="size-8" />
         </div>
 
-        <div className=" grid gap-4 sm:mt-16 mt-10 lg:grid-cols-6 grid-cols-1 lg:grid-rows-2">
+        <div className=" grid gap-4 sm:mt-12 mt-6 lg:grid-cols-6 grid-cols-1 lg:grid-rows-2">
           <BentoCard
             title=""
             description=""
