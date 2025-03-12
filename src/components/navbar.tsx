@@ -25,7 +25,7 @@ function DesktopNav() {
         <PlusGridItem key={href} className="relative flex">
           <Link
             href={href}
-            className="flex items-center px-4 py-3 font-mono text-base font-medium text-gray-950/80 data-[hover]:text-gray-950 bg-blend-multiply data-[hover]:bg-black/[2.5%]"
+            className="flex items-center px-4 py-3 font-mono text-base font-medium text-gray-950/80 data-[hover]:text-gray-950 bg-blend-multiply data-[hover]:bg-white/50"
           >
             {label}
           </Link>
@@ -38,7 +38,7 @@ function DesktopNav() {
 function MobileNavButton() {
   return (
     <DisclosureButton
-      className="flex size-[60px] items-center justify-center self-center data-[hover]:bg-black/5 lg:hidden"
+      className="flex size-[60px] items-center justify-center self-center data-[hover]:bg-white/50 lg:hidden"
       aria-label="Open main menu"
     >
       <Bars2Icon className="size-6" />
@@ -90,7 +90,7 @@ function SocialLinks() {
         href="https://www.linkedin.com/in/holmanworks/"
         target="_blank"
         aria-label="Visit us on LinkedIn"
-        className="text-gray-950/80 data-[hover]:text-[#0077b5] p-5 items-center flex bg-blend-multiply data-[hover]:bg-black/[2.5%]"
+        className="text-gray-950/80 data-[hover]:text-[#0077b5] p-5 items-center flex bg-blend-multiply data-[hover]:bg-white/50"
       >
         <SocialIconLinkedIn className="size-5" />
       </Link>

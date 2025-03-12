@@ -28,7 +28,7 @@ function Hero() {
 
         <Navbar/>
 
-        <div className="flex flex-col justify-center xl:h-[600px] lg:h-[500px] h-[450px]">
+        <div className="flex flex-col justify-center xl:h-[550px] lg:h-[500px] h-[450px]">
 
           <div className="sm:text-6xl text-4xl font-bold sm:tracking-tight text-gray-800 sm:mb-1 mb-0">
             holman
@@ -141,10 +141,10 @@ function BentoSection() {
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/penyo/home.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/penyo/trial.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/penyo/gender.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/penyo/home.png)] bg-contain bg-no-repeat bg-center" />
             }
             className="lg:col-span-2 bg-teal-200/70"
           />
@@ -165,7 +165,7 @@ export default function Home() {
 
       <main>
         
-        <Container className="mt-10 opacity-70">
+        <Container className="mt-10 opacity-90">
           <LogoCloud />
         </Container>
 

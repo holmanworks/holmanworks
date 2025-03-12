@@ -18,12 +18,11 @@ const boardData = [
       "/screenshots/makesheets/home.png",
       "/screenshots/makesheets/settings.png",
       "/screenshots/makesheets/summary.png",
-      "/screenshots/makesheets/sign up.png",
+      "/screenshots/makesheets/1.png",
       "/screenshots/makesheets/2.png",
       "/screenshots/makesheets/3.png",
       "/screenshots/makesheets/4.png",
       "/screenshots/makesheets/5.png",
-      "/screenshots/makesheets/landing.png",
     ],
     name: "Makesheets - Personalize your child's learning",
     column: 4,
@@ -38,7 +37,7 @@ const boardData = [
       "/screenshots/types/listening.png",
     ],
     name: "TypeS - Automotive Bulb AI Finder",
-    column: 8,
+    column: 7,
   },
   {
     images: [
@@ -75,10 +74,9 @@ const boardData = [
       "/screenshots/oursong/create4.png",
       "/screenshots/oursong/create5.png",
       "/screenshots/oursong/complete.png",
-      "/screenshots/oursong/details.png",
     ],
     name: "OurSong - Music NFT",
-    column: 8,
+    column: 7,
   },
   {
     images: [
@@ -104,6 +102,18 @@ const boardData = [
   },
   {
     images: [
+      "/screenshots/ft-assist/click.png",
+      "/screenshots/ft-assist/writing.png",
+      "/screenshots/ft-assist/preview.png",
+      "/screenshots/ft-assist/dropdown.png",
+      "/screenshots/ft-assist/extension.png",
+      "/screenshots/ft-assist/modal.png",
+    ],
+    name: "Forethought - Generate Response with SupportGPT",
+    column: 4,
+  },
+  {
+    images: [
       "/screenshots/penyo/signin.png",
       "/screenshots/penyo/gender.png",
       "/screenshots/penyo/name.png",
@@ -113,7 +123,7 @@ const boardData = [
       "/screenshots/penyo/home.png",
       "/screenshots/penyo/configuration.png",
       "/screenshots/penyo/setting.png",
-      "/screenshots/penyo/usecase.png",
+      "/screenshots/penyo/landing.png",
       "/screenshots/penyo/style.png",
       "/screenshots/penyo/logo.png",
     ],
@@ -130,13 +140,13 @@ function Board({ name, images, column }: { name: string; images: string[]; colum
       let newColumns = column;
 
       if (window.innerWidth < 480) {
-        newColumns = column === 8 ? 2 : 1;
+        newColumns = column === 7 ? 2 : 1;
       } else if (window.innerWidth >= 480 && window.innerWidth < 768) {
-        newColumns = column === 8 ? 3 : 2;
+        newColumns = column === 7 ? 3 : 2;
       } else if (window.innerWidth >= 768 && window.innerWidth < 1280) {
-        newColumns = column === 8 ? 5 : 3;
+        newColumns = column === 7 ? 5 : 3;
       } else if (window.innerWidth >= 1280 && window.innerWidth < 1440) {
-        newColumns = column === 8 ? 6 : 4;
+        newColumns = column === 7 ? 6 : 4;
       } else {
         newColumns = column;
       }
