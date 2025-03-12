@@ -252,3 +252,43 @@ export function CaseStudies() {
     </div>
   );
 }
+
+
+export function CaseStudiesGrid() {
+  return (
+    <div className="">
+
+        {/* Grid Layout */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+          {testimonials.map(({ img, name, title, url }, index) => (
+            <a
+              key={index}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative block overflow-hidden rounded-lg group"
+            >
+              {/* Image */}
+              <img
+                src={img}
+                alt={name}
+                className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+              />
+
+              {/* Gradient overlay */}
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 bg-gradient-to-t from-[#000000]/80 from-[calc(0*100%)] to-transparent to-[calc(2/5*100%)] ring-1 ring-inset ring-black/0"
+              />
+
+              {/* Text content */}
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <p className="font-mono sm:text-4xl text-2xl font-medium sm:tracking-tighter text-white">{name}</p>
+                <p className="font-sans sm:text-lg text-base font-normal text-white pt-2">{title}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+    </div>
+  );
+}
