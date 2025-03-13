@@ -40,7 +40,7 @@ const testimonials = [
   {
     img: '/screenshots/case-playground.png',
     name: 'Forethought - SupportGPT Playground',
-    title: "Gen AI for customer support automation, with Open AI's ChatGPT",
+    title: "A sandbox lets companies test and customize bots with their data",
     url: 'https://docs.google.com/presentation/d/1N5_5yJyH4pVq8CyQ-w7tG5CL3t1_JFky0WLlka7G7gM/edit?usp=sharing',
   },
   {

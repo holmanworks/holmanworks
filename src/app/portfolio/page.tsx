@@ -24,7 +24,8 @@ const boardData = [
       "/screenshots/makesheets/4.png",
       "/screenshots/makesheets/5.png",
     ],
-    name: "Makesheets - Personalize your child's learning",
+    name: "Makesheets",
+    description: "Personalize your child's learning",
     column: 4,
   },
   {
@@ -36,24 +37,9 @@ const boardData = [
       "/screenshots/types/details.png",
       "/screenshots/types/listening.png",
     ],
-    name: "TypeS - Automotive Bulb AI Finder",
+    name: "TypeS",
+    description: "AI-powered automotive bulb finder",
     column: 7,
-  },
-  {
-    images: [
-      "/screenshots/ft-solve/builder.png",
-      "/screenshots/ft-solve/translation.png",
-      "/screenshots/ft-solve/action.png",
-      "/screenshots/ft-solve/article.png",
-      "/screenshots/ft-solve/barometer.png",
-      "/screenshots/ft-solve/condition.png",
-      "/screenshots/ft-solve/dashboard.png",
-      "/screenshots/ft-solve/intent.png",
-      "/screenshots/ft-solve/preview.png",
-      "/screenshots/ft-solve/preview2.png",
-    ],
-    name: "Forethought - Customer service workflow builder",
-    column: 4,
   },
   {
     images: [
@@ -75,8 +61,26 @@ const boardData = [
       "/screenshots/oursong/create5.png",
       "/screenshots/oursong/complete.png",
     ],
-    name: "OurSong - Music NFT",
+    name: "OurSong",
+    description: "Blockchain-based social NFT platform",
     column: 7,
+  },
+  {
+    images: [
+      "/screenshots/ft-solve/builder.png",
+      "/screenshots/ft-solve/translation.png",
+      "/screenshots/ft-solve/action.png",
+      "/screenshots/ft-solve/article.png",
+      "/screenshots/ft-solve/barometer.png",
+      "/screenshots/ft-solve/condition.png",
+      "/screenshots/ft-solve/dashboard.png",
+      "/screenshots/ft-solve/intent.png",
+      "/screenshots/ft-solve/preview.png",
+      "/screenshots/ft-solve/preview2.png",
+    ],
+    name: "Forethought Solve",
+    description: "Build automated workflows for customer service",
+    column: 4,
   },
   {
     images: [
@@ -88,7 +92,8 @@ const boardData = [
       "/screenshots/ft-discover/filter1.png",
       "/screenshots/ft-discover/filter2.png",
     ],
-    name: "Forethought - AI powered support insights",
+    name: "Forethought Discover",
+    description: "AI-powered customer support insights",
     column: 4,
   },
   {
@@ -97,7 +102,8 @@ const boardData = [
       "/screenshots/ft-playground/sample.png",
       "/screenshots/ft-playground/playground.png",
     ],
-    name: "Forethought - SupportGPT Playground",
+    name: "Forethought SupportGPT",
+    description: "A sandbox lets companies test GenAI bots with their data",
     column: 4,
   },
   {
@@ -109,8 +115,23 @@ const boardData = [
       "/screenshots/ft-assist/extension.png",
       "/screenshots/ft-assist/modal.png",
     ],
-    name: "Forethought - Generate Response with SupportGPT",
+    name: "Forethought Assist",
+    description: "Provides agents with AI-guided responses",
     column: 4,
+  },  {
+    images: [
+      "/screenshots/ft-widget/widget1.png",
+      "/screenshots/ft-widget/widget2.png",
+      "/screenshots/ft-widget/widget3.png",
+      "/screenshots/ft-widget/widget4.png",
+      "/screenshots/ft-widget/widget5.png",
+      "/screenshots/ft-widget/widget6.png",
+      "/screenshots/ft-widget/component.png",
+      "/screenshots/ft-widget/configuration.png",
+    ],
+    name: "Forethought Widget",
+    description: "AI-powered assistant platforms for self-service support",
+    column: 7,
   },
   {
     images: [
@@ -119,20 +140,21 @@ const boardData = [
       "/screenshots/penyo/name.png",
       "/screenshots/penyo/age.png",
       "/screenshots/penyo/trial.png",
-      "/screenshots/penyo/confirmation.png",
       "/screenshots/penyo/home.png",
       "/screenshots/penyo/configuration.png",
       "/screenshots/penyo/setting.png",
-      "/screenshots/penyo/landing.png",
-      "/screenshots/penyo/style.png",
       "/screenshots/penyo/logo.png",
+      "/screenshots/penyo/colors.png",
+      "/screenshots/penyo/component.png",
+      "/screenshots/penyo/landing.png",
     ],
-    name: "Penyo - AI companion for elderly",
+    name: "Penyo",
+    description: "AI-powered companion for elderly",
     column: 4,
   },
 ];
 
-function Board({ name, images, column }: { name: string; images: string[]; column: number }) {
+function Board({ name, description, images, column }: { name: string; description: string; images: string[]; column: number }) {
   const [columns, setColumns] = useState(column);
 
   useEffect(() => {
@@ -160,17 +182,22 @@ function Board({ name, images, column }: { name: string; images: string[]; colum
     adjustColumns();
     window.addEventListener("resize", adjustColumns);
     return () => window.removeEventListener("resize", adjustColumns);
-  }, [column]); // ✅ Only depends on `column`, not `images.length`
+  }, [column]);
 
   return (
     <div className="relative">
       <div className="flex flex-col items-center sm:pb-24 pb-12">
-        <p className="font-mono text-center max-w-[700px] xl:text-6xl lg:text-6xl md:text-5xl text-3xl font-medium sm:tracking-tighter text-white md:py-24 py-12">
-          {name}
-        </p>
+        <div className="md:py-20 py-10 max-w-[700px] gap-y-1 flex flex-col">
+          <p className="font-sans text-center lg:text-6xl md:text-5xl text-3xl font-bold sm:tracking-tighter text-white">
+            {name}
+          </p>
+          <p className="font-mono text-center md:text-2xl sm:text-lg text-base font-regular sm:tracking-tighter text-white">
+            {description}
+          </p>
+        </div>
 
         <Masonry
-          breakpointCols={columns} // ✅ Directly using the dynamic columns state
+          breakpointCols={columns}
           className="masonry-grid"
           columnClassName="masonry-grid-column"
         >
@@ -199,7 +226,7 @@ export default function Portfolio() {
 
       <div className="xl:p-20 sm:p-10 p-6 space-y-8">
         {boardData.map((item, index) => (
-          <Board key={index} name={item.name} images={item.images} column={item.column} />
+          <Board key={index} name={item.name} description={item.description} images={item.images} column={item.column} />
         ))}
       </div>
 

@@ -44,11 +44,11 @@ module.exports = {
         }],
         '6xl':['36px',{
           lineHeight: '42px',
-          letterSpacing: '-.5px',
+          letterSpacing: '-.75px',
         }],
         '7xl':['48px',{
           lineHeight: '50px',
-          letterSpacing: '-2px',
+          letterSpacing: '-1.5px',
         }],
         '8xl':['56px',{
           lineHeight: '58px',
