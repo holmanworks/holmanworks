@@ -118,7 +118,8 @@ const boardData = [
     name: "Forethought Assist",
     description: "Provides agents with AI-guided responses",
     column: 4,
-  },  {
+  },  
+  {
     images: [
       "/screenshots/ft-widget/widget1.png",
       "/screenshots/ft-widget/widget2.png",
@@ -132,6 +133,25 @@ const boardData = [
     name: "Forethought Widget",
     description: "AI-powered assistant platforms for self-service support",
     column: 7,
+  },
+  {
+    images: [
+      "/screenshots/ft-designsystem/colors.png",
+      "/screenshots/ft-designsystem/grid.png",
+      "/screenshots/ft-designsystem/typography.png",
+      "/screenshots/ft-designsystem/elevations.png",
+      "/screenshots/ft-designsystem/button.png",
+      "/screenshots/ft-designsystem/input.png",
+      "/screenshots/ft-designsystem/filter.png",
+      "/screenshots/ft-designsystem/menu.png",
+      "/screenshots/ft-designsystem/tabs.png",
+      "/screenshots/ft-designsystem/sidebar.png",
+      "/screenshots/ft-designsystem/toast.png",
+      "/screenshots/ft-designsystem/others.png",
+    ],
+    name: "Forethought Design System",
+    description: "Consistency, efficiency, collaboration and scalability",
+    column: 4,
   },
   {
     images: [
