@@ -8,7 +8,7 @@ import { Navbar } from "@/components/navbar";
 import Masonry from "react-masonry-css";
 import { useState, useEffect } from "react";
 
-const categories = ["All", "Web app", "Mobile app", "Print", "Exhibition"];
+const categories = ["All", "Web app", "Mobile app", "Design system", "Print", "Exhibition"];
 
 const boardData = [
   {
@@ -161,7 +161,7 @@ const boardData = [
     ],
     name: "Forethought Design System",
     description: "Consistency, efficiency, collaboration and scalability",
-    category: "Web app",
+    category: "Design System",
     column: 4,
   },
   {
