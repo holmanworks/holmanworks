@@ -3,9 +3,12 @@
 import { Container } from "@/components/container";
 import { Footer } from "@/components/footer";
 import { GradientBackground } from "@/components/gradient";
+import { Button } from "@/components/button";
 import { Navbar } from "@/components/navbar";
 import Masonry from "react-masonry-css";
 import { useState, useEffect } from "react";
+
+const categories = ["All", "Web app", "Mobile app", "Print", "Exhibition"];
 
 const boardData = [
   {
@@ -26,6 +29,7 @@ const boardData = [
     ],
     name: "Makesheets",
     description: "Personalize your child's learning",
+    category: "Web app",
     column: 4,
   },
   {
@@ -39,6 +43,7 @@ const boardData = [
     ],
     name: "TypeS",
     description: "AI-powered automotive bulb finder",
+    category: "Web app",
     column: 7,
   },
   {
@@ -63,6 +68,7 @@ const boardData = [
     ],
     name: "OurSong",
     description: "Blockchain-based social NFT platform",
+    category: "Mobile app",
     column: 7,
   },
   {
@@ -77,9 +83,11 @@ const boardData = [
       "/screenshots/ft-solve/intent.png",
       "/screenshots/ft-solve/preview.png",
       "/screenshots/ft-solve/preview2.png",
+      "/screenshots/ft-widget/configuration.png",
     ],
     name: "Forethought Solve",
     description: "Build automated workflows for customer service",
+    category: "Web app",
     column: 4,
   },
   {
@@ -94,6 +102,7 @@ const boardData = [
     ],
     name: "Forethought Discover",
     description: "AI-powered customer support insights",
+    category: "Web app",
     column: 4,
   },
   {
@@ -104,6 +113,7 @@ const boardData = [
     ],
     name: "Forethought SupportGPT",
     description: "A sandbox lets companies test GenAI bots with their data",
+    category: "Web app",
     column: 4,
   },
   {
@@ -117,6 +127,7 @@ const boardData = [
     ],
     name: "Forethought Assist",
     description: "Provides agents with AI-guided responses",
+    category: "Web app",
     column: 4,
   },  
   {
@@ -127,11 +138,10 @@ const boardData = [
       "/screenshots/ft-widget/widget4.png",
       "/screenshots/ft-widget/widget5.png",
       "/screenshots/ft-widget/widget6.png",
-      "/screenshots/ft-widget/component.png",
-      "/screenshots/ft-widget/configuration.png",
     ],
     name: "Forethought Widget",
     description: "AI-powered assistant platforms for self-service support",
+    category: "Web app",
     column: 7,
   },
   {
@@ -151,6 +161,7 @@ const boardData = [
     ],
     name: "Forethought Design System",
     description: "Consistency, efficiency, collaboration and scalability",
+    category: "Web app",
     column: 4,
   },
   {
@@ -170,11 +181,22 @@ const boardData = [
     ],
     name: "Penyo",
     description: "AI-powered companion for elderly",
+    category: "Web app",
     column: 4,
   },
 ];
 
-function Board({ name, description, images, column }: { name: string; description: string; images: string[]; column: number }) {
+function Board({
+  name,
+  description,
+  images,
+  column,
+}: {
+  name: string;
+  description: string;
+  images: string[];
+  column: number;
+}) {
   const [columns, setColumns] = useState(column);
 
   useEffect(() => {
@@ -236,6 +258,14 @@ function Board({ name, description, images, column }: { name: string; descriptio
 }
 
 export default function Portfolio() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  // Filter board data based on selected category
+  const filteredBoards =
+    selectedCategory === "All"
+      ? boardData
+      : boardData.filter((item) => item.category === selectedCategory);
+
   return (
     <main className="overflow-hidden bg-black">
       <GradientBackground />
@@ -244,9 +274,33 @@ export default function Portfolio() {
         <Navbar />
       </Container>
 
-      <div className="xl:p-20 sm:p-10 p-6 space-y-8">
-        {boardData.map((item, index) => (
-          <Board key={index} name={item.name} description={item.description} images={item.images} column={item.column} />
+      {/* Category Filter Buttons */}
+      <div className="flex justify-center gap-3 pt-8 flex-wrap">
+        {categories.map((category) => (
+          <button
+            key={category}
+            className={`rounded-full text-base font-mono font-semibold transition h-10 px-4 ${
+              selectedCategory === category
+                ? "bg-white text-black"
+                : "ring-1 ring-inset ring-white/40 text-white/80 hover:bg-white/10"
+            }`}
+            onClick={() => setSelectedCategory(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
+      {/* Display Boards Based on Selected Category */}
+      <div className="xl:p-20 sm:p-10 p-6">
+        {filteredBoards.map((item, index) => (
+          <Board
+            key={index}
+            name={item.name}
+            description={item.description}
+            images={item.images}
+            column={item.column}
+          />
         ))}
       </div>
 
