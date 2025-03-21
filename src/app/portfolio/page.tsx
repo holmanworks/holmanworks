@@ -161,7 +161,7 @@ const boardData = [
     ],
     name: "Forethought Design System",
     description: "Consistency, efficiency, collaboration and scalability",
-    category: "Design System",
+    category: "Design system",
     column: 4,
   },
   {
