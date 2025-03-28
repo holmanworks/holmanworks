@@ -8,7 +8,7 @@ import { Navbar } from "@/components/navbar";
 import Masonry from "react-masonry-css";
 import { useState, useEffect } from "react";
 
-const categories = ["All", "Web app", "Mobile app", "Design system", "Print", "Exhibition"];
+const categories = ["All", "B2B", "B2C", "Design system", "Print", "Exhibition"];
 
 const boardData = [
   {
@@ -29,7 +29,7 @@ const boardData = [
     ],
     name: "Makesheets",
     description: "Personalize your child's learning",
-    category: "Web app",
+    category: "B2B",
     column: 4,
   },
   {
@@ -43,7 +43,7 @@ const boardData = [
     ],
     name: "TypeS",
     description: "AI-powered automotive bulb finder",
-    category: "Web app",
+    category: "B2C",
     column: 7,
   },
   {
@@ -68,7 +68,7 @@ const boardData = [
     ],
     name: "OurSong",
     description: "Blockchain-based social NFT platform",
-    category: "Mobile app",
+    category: "B2C",
     column: 7,
   },
   {
@@ -97,7 +97,7 @@ const boardData = [
     ],
     name: "Forethought Solve",
     description: "Build automated workflows for customer service",
-    category: "Web app",
+    category: "B2B",
     column: 4,
   },
   {
@@ -112,7 +112,7 @@ const boardData = [
     ],
     name: "Forethought Discover",
     description: "AI-powered customer support insights",
-    category: "Web app",
+    category: "B2B",
     column: 4,
   },
   {
@@ -123,7 +123,7 @@ const boardData = [
     ],
     name: "Forethought SupportGPT",
     description: "A sandbox lets companies test GenAI bots with their data",
-    category: "Web app",
+    category: "B2B",
     column: 4,
   },
   {
@@ -137,7 +137,7 @@ const boardData = [
     ],
     name: "Forethought Assist",
     description: "Provides agents with AI-guided responses",
-    category: "Web app",
+    category: "B2B",
     column: 4,
   },  
   {
@@ -151,7 +151,7 @@ const boardData = [
     ],
     name: "Forethought Widget",
     description: "AI-powered assistant platforms for self-service support",
-    category: "Web app",
+    category: "B2C",
     column: 7,
   },
   {
@@ -191,7 +191,7 @@ const boardData = [
     ],
     name: "Penyo",
     description: "AI-powered companion for elderly",
-    category: "Web app",
+    category: "B2C",
     column: 4,
   },
 ];
