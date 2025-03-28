@@ -93,7 +93,7 @@ function BentoSection() {
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/ft-solve/builder.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/ft-solve/condition.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
               <div className="h-full bg-[url(/screenshots/ft-solve/translation.png)] bg-contain bg-no-repeat bg-center" />
