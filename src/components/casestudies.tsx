@@ -142,8 +142,8 @@ function CaseStudyCard({
   
           {/* Text content */}
           <div className="absolute bottom-0 left-0 right-0 p-6">
-            <p className="font-mono sm:text-4xl text-2xl font-medium sm:tracking-tighter text-white">{name}</p>
-            <p className="font-sans sm:text-lg text-base font-normal text-white pt-2">{title}</p>
+            <p className="font-mono text-3xl font-medium sm:tracking-tighter text-white">{name}</p>
+            <p className="font-sans text-lg font-normal text-white pt-2">{title}</p>
           </div>
         </div>
       </a>
@@ -177,9 +177,9 @@ export function CaseStudies() {
         <div className="flex items-center gap-4">
           {/* Title */}
           <Link href="/case" aria-label="Case Studies" className="w-full">
-            <div className="sm:text-9xl text-7xl font-bold text-gray-800 flex items-center gap-x-4 hover:gap-x-6 transition-all duration-300 ease-in-out">
+            <div className="text-3xl font-bold font-mono text-gray-800 flex items-center gap-x-2 hover:gap-x-4 transition-all duration-300 ease-in-out px-4">
               Case Studies
-              <ArrowRightIcon className="size-8" />
+              <ArrowRightIcon className="size-6" />
             </div>
           </Link>
 
@@ -190,7 +190,7 @@ export function CaseStudies() {
               className="p-3 border border-gray-800 hover:bg-gray-800 rounded-full transition text-gray-800 hover:text-white"
               aria-label="Scroll Left"
             >
-              <ChevronLeftIcon className="w-6 h-6" />
+              <ChevronLeftIcon className="w-4 h-4" />
             </button>
 
             {/* Right Arrow Button */}
@@ -201,7 +201,7 @@ export function CaseStudies() {
               className="p-3 border border-gray-800 hover:bg-gray-800 rounded-full transition text-gray-800 hover:text-white"
               aria-label="Scroll Right"
             >
-              <ChevronRightIcon className="w-6 h-6" />
+              <ChevronRightIcon className="w-4 h-4" />
             </button>
           </div>
         </div>
@@ -210,7 +210,7 @@ export function CaseStudies() {
       <div
         ref={scrollRef}
         className={clsx([
-          'sm:mt-12 mt-8 flex sm:gap-8 gap-6 px-[var(--scroll-padding)]',
+          'sm:mt-8 mt-4 flex sm:gap-8 gap-6 px-[var(--scroll-padding)]',
           '[scrollbar-width:none] [&::-webkit-scrollbar]:hidden',
           'snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-smooth',
           '[--scroll-padding:max(theme(spacing.6),calc((100vw-720px)/2))] lg:[--scroll-padding:max(theme(spacing.8),calc((100vw-1280px)/2))]',
@@ -283,8 +283,8 @@ export function CaseStudiesGrid() {
 
               {/* Text content */}
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="font-mono sm:text-4xl text-2xl font-medium sm:tracking-tighter text-white">{name}</p>
-                <p className="font-sans sm:text-lg text-base font-normal text-white pt-2">{title}</p>
+                <p className="font-mono text-2xl font-medium sm:tracking-tighter text-white">{name}</p>
+                <p className="font-sans text-base font-normal text-white pt-2">{title}</p>
               </div>
             </a>
           ))}

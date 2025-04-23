@@ -13,7 +13,7 @@ import { Icon } from './logo'
 
 
 const links = [
-  { href: '/portfolio', label: 'Portfolio' },
+  { href: '/portfolio', label: 'Showcase' },
   { href: '/case', label: 'Case Studies' },
   { href: '/about', label: 'About' },
 ]
@@ -106,10 +106,13 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
         <PlusGridRow className="relative flex justify-between">
 
           {/* Nav Left */}
-          <div className="relative flex flex-1 gap-6">
-            <PlusGridItem className="">
-              <Link href="/" title="Home">
-                <Icon />
+          <div className="relative flex gap-6">
+            <PlusGridItem className="relative flex">
+              <Link 
+                href="/" 
+                title="Home"
+                className="flex items-center px-4 py-3 font-mono text-base font-medium text-gray-950/80 data-[hover]:text-gray-950 bg-blend-multiply data-[hover]:bg-gray-200/50"
+              >Hi, I am...
 
                 {/* <div className="size-16 relative bg-no-repeat bg-center bg-cover" 
                     style={{
@@ -122,7 +125,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
                       backgroundImage: `url('/holmanworks-icon/avatar.png')`
                     }}
                   ></div>
-                </div>  */}
+                </div> */}
 
               </Link>
             </PlusGridItem>

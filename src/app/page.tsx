@@ -23,25 +23,25 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
-      <Gradient className="absolute xl:inset-4 lg:inset-3 md:inset-3 sm:inset-3 inset-2 bottom-0 rounded-[32px] ring-1 ring-inset ring-black/5" />
+      {/* <Gradient className="absolute xl:inset-4 lg:inset-3 md:inset-3 sm:inset-3 inset-2 bottom-0 rounded-[32px] ring-1 ring-inset ring-black/5" /> */}
       <Container className="relative">
 
         <Navbar/>
 
-        <div className="flex flex-col justify-center xl:h-[550px] lg:h-[500px] h-[450px]">
+        <div className="flex flex-col justify-center">
 
-          <div className="sm:text-6xl text-4xl font-bold sm:tracking-tight text-gray-800 sm:mb-1 mb-0">
+          {/* <div className="sm:text-6xl text-4xl font-bold sm:tracking-tight text-gray-800 sm:mb-1 mb-0">
             holman
           </div>
 
           <div className="lg:text-3xl md:text-2xl sm:text-2xl text-xl font-normal font-serif text-gray-800 mb-6">
             [ <span className='italic'>Design consultant / Design leader / Designer</span> ]
-          </div>
+          </div> */}
 
-          <div className='w-1/4 h-[2px] bg-gray-950'></div>
+          {/* <div className='w-1/4 h-[2px] bg-gray-950'></div> */}
 
-          <div className="lg:text-2xl md:text-xl sm:text-lg text-base font-mono max-w-[700px] font-normal text-gray-800 mt-6">
-            : specialize in UI/UX, product development, brand strategy, design strategy, art direction, prototyping, front-end development, and concept creation.
+          <div className="text-base font-mono max-w-[620px] leading-5 font-normal text-gray-800 px-4 py-3 my-10">
+            Holman, I make products that look good, feel good, and do the job. From UX to front-end, concept to craft — I help startups and teams design smarter tools, stronger brands, and better ideas.
           </div>
 
           {/* <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
@@ -71,12 +71,12 @@ function BentoSection() {
         className="flex flex-col"
       >
 
-        <div className="sm:text-9xl text-7xl font-bold text-gray-800 flex items-center gap-x-4 hover:gap-x-6 transition-all duration-300 ease-in-out">
+        <div className="text-3xl font-bold font-mono text-gray-800 flex items-center gap-x-2 hover:gap-x-4 transition-all duration-300 ease-in-out px-4">
           Showcase
-          <ArrowRightIcon className="size-8" />
+          <ArrowRightIcon className="size-6" />
         </div>
 
-        <div className=" grid gap-4 sm:mt-12 mt-6 lg:grid-cols-6 grid-cols-1 lg:grid-rows-2">
+        <div className=" grid gap-4 sm:mt-8 mt-4 lg:grid-cols-6 grid-cols-1 lg:grid-rows-2">
           <BentoCard
             title=""
             description=""
@@ -165,11 +165,11 @@ export default function Home() {
 
       <main>
         
-        <Container className="mt-10 opacity-90">
+        {/* <Container className="mt-10 opacity-90">
           <LogoCloud />
-        </Container>
+        </Container> */}
 
-        <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-40">
+        <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-10">
           <BentoSection />
         </div>
 
