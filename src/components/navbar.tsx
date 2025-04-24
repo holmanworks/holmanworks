@@ -13,7 +13,7 @@ import { Icon } from './logo'
 
 
 const links = [
-  { href: '/portfolio', label: 'Showcase' },
+  { href: '/portfolio', label: 'Projects' },
   { href: '/case', label: 'Case Studies' },
   { href: '/about', label: 'About' },
 ]

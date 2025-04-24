@@ -8,69 +8,9 @@ import { Navbar } from "@/components/navbar";
 import Masonry from "react-masonry-css";
 import { useState, useEffect } from "react";
 
-const categories = ["All", "B2B", "B2C", "Design system", "Print", "Exhibition"];
+const categories = ["All", "B2B", "B2C", "Design System", "Print", "Exhibition"];
 
 const boardData = [
-  {
-    images: [
-      "/screenshots/makesheets/preview.png",
-      "/screenshots/makesheets/share.png",
-      "/screenshots/makesheets/score.png",
-      "/screenshots/makesheets/answer.png",
-      "/screenshots/makesheets/practice.png",
-      "/screenshots/makesheets/home.png",
-      "/screenshots/makesheets/settings.png",
-      "/screenshots/makesheets/summary.png",
-      "/screenshots/makesheets/1.png",
-      "/screenshots/makesheets/2.png",
-      "/screenshots/makesheets/3.png",
-      "/screenshots/makesheets/4.png",
-      "/screenshots/makesheets/5.png",
-    ],
-    name: "Makesheets",
-    description: "Personalize your child's learning",
-    category: "B2B",
-    column: 4,
-  },
-  {
-    images: [
-      "/screenshots/types/ai.png",
-      "/screenshots/types/typing.png",
-      "/screenshots/types/searching.png",
-      "/screenshots/types/result.png",
-      "/screenshots/types/details.png",
-      "/screenshots/types/listening.png",
-    ],
-    name: "TypeS",
-    description: "AI-powered automotive bulb finder",
-    category: "B2C",
-    column: 7,
-  },
-  {
-    images: [
-      "/screenshots/oursong/home.png",
-      "/screenshots/oursong/community.png",
-      "/screenshots/oursong/chatroom.png",
-      "/screenshots/oursong/wallet.png",
-      "/screenshots/oursong/gift.png",
-      "/screenshots/oursong/cardfront.png",
-      "/screenshots/oursong/cardback.png",
-      "/screenshots/oursong/market.png",
-      "/screenshots/oursong/tasks.png",
-      "/screenshots/oursong/voucherinfo.png",
-      "/screenshots/oursong/voucher.png",
-      "/screenshots/oursong/create1.png",
-      "/screenshots/oursong/create2.png",
-      "/screenshots/oursong/create3.png",
-      "/screenshots/oursong/create4.png",
-      "/screenshots/oursong/create5.png",
-      "/screenshots/oursong/complete.png",
-    ],
-    name: "OurSong",
-    description: "Blockchain-based social NFT platform",
-    category: "B2C",
-    column: 7,
-  },
   {
     images: [
       "/screenshots/ft-solve/1.png",
@@ -176,6 +116,66 @@ const boardData = [
   },
   {
     images: [
+      "/screenshots/oursong/home.png",
+      "/screenshots/oursong/community.png",
+      "/screenshots/oursong/chatroom.png",
+      "/screenshots/oursong/wallet.png",
+      "/screenshots/oursong/gift.png",
+      "/screenshots/oursong/cardfront.png",
+      "/screenshots/oursong/cardback.png",
+      "/screenshots/oursong/market.png",
+      "/screenshots/oursong/tasks.png",
+      "/screenshots/oursong/voucherinfo.png",
+      "/screenshots/oursong/voucher.png",
+      "/screenshots/oursong/create1.png",
+      "/screenshots/oursong/create2.png",
+      "/screenshots/oursong/create3.png",
+      "/screenshots/oursong/create4.png",
+      "/screenshots/oursong/create5.png",
+      "/screenshots/oursong/complete.png",
+    ],
+    name: "OurSong",
+    description: "Blockchain-based social NFT platform",
+    category: "B2C",
+    column: 7,
+  },
+  {
+    images: [
+      "/screenshots/makesheets/preview.png",
+      "/screenshots/makesheets/share.png",
+      "/screenshots/makesheets/score.png",
+      "/screenshots/makesheets/answer.png",
+      "/screenshots/makesheets/practice.png",
+      "/screenshots/makesheets/home.png",
+      "/screenshots/makesheets/settings.png",
+      "/screenshots/makesheets/summary.png",
+      "/screenshots/makesheets/1.png",
+      "/screenshots/makesheets/2.png",
+      "/screenshots/makesheets/3.png",
+      "/screenshots/makesheets/4.png",
+      "/screenshots/makesheets/5.png",
+    ],
+    name: "Makesheets",
+    description: "Personalize your child's learning",
+    category: "B2B",
+    column: 4,
+  },
+  {
+    images: [
+      "/screenshots/types/ai.png",
+      "/screenshots/types/typing.png",
+      "/screenshots/types/searching.png",
+      "/screenshots/types/result.png",
+      "/screenshots/types/details.png",
+      "/screenshots/types/listening.png",
+    ],
+    name: "TypeS",
+    description: "AI-powered automotive bulb finder",
+    category: "B2C",
+    column: 7,
+  },
+  {
+    images: [
       "/screenshots/penyo/signin.png",
       "/screenshots/penyo/gender.png",
       "/screenshots/penyo/name.png",
@@ -239,11 +239,11 @@ function Board({
   return (
     <div className="relative">
       <div className="flex flex-col items-center sm:pb-24 pb-12">
-        <div className="md:py-20 py-10 max-w-[700px] gap-y-1 flex flex-col">
-          <p className="font-sans text-center lg:text-6xl md:text-5xl text-3xl font-bold sm:tracking-tighter text-white">
+        <div className="md:py-20 py-10 gap-y-1 flex flex-col">
+          <p className="font-mono text-center md:text-xl text-base font-bold text-white sm:tracking-tight">
             {name}
           </p>
-          <p className="font-mono text-center md:text-2xl sm:text-lg text-base font-regular sm:tracking-tighter text-white">
+          <p className="font-mono text-center md:text-4xl sm:text-2xl text-xl font-normal sm:tracking-tighter text-white">
             {description}
           </p>
         </div>

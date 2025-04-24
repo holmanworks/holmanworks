@@ -23,7 +23,7 @@ export function BentoCard({
       data-dark={dark ? 'true' : undefined}
       className={clsx(
         className,
-        'group relative flex flex-col overflow-hidden rounded-[8px] ring-1 ring-inset ring-black/0',
+        'group relative flex flex-col overflow-hidden rounded-[0px] ring-1 ring-inset ring-black/0',
       )}
     >
       {/* Graphic container */}

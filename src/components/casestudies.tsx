@@ -21,14 +21,14 @@ import { ArrowRightIcon, ChevronRightIcon, ChevronLeftIcon } from '@heroicons/re
 const testimonials = [
   {
     img: '/screenshots/case-solve.png',
-    name: 'Forethought - Customer Service Workflow Builder',
+    name: 'Forethought - Workflow Builder',
     title: 'Build intricate workflows easily',
     url: 'https://docs.google.com/presentation/d/1wBCmaenxcehNCNh65VSPwlbsloMA2uk5Puxx_CLkcn4/edit?usp=sharing',
   },
   {
     img: '/screenshots/case-oursong.png',
-    name: 'OurSong - Music NFT + VIP Community',
-    title: 'Transforming a music NFT marketplace into an exclusion VIP community',
+    name: 'OurSong - Music NFT',
+    title: 'From NFT Marketplace to VIP Music Community',
     url: 'https://docs.google.com/presentation/d/1IMigIkFY0sp1qgTIAt0_bT9uuQfmP4BniAkkH8pW52c/edit?usp=sharing',
   },
   {
@@ -45,8 +45,8 @@ const testimonials = [
   },
   {
     img: '/screenshots/case-assist.png',
-    name: 'Forethought - Generate Response with SupportGPT',
-    title: 'Agents get suggested response based on ticket context and powered by Gen AI',
+    name: 'Forethought - Gen AI Response',
+    title: 'Gen AI suggests replies tailored to each ticket’s context',
     url: 'https://docs.google.com/presentation/d/1ZeggOX9cvm2repa_423idjjRztpRyQeghJXlVmJLNbk/edit?usp=sharing',
   },
   {
@@ -118,7 +118,7 @@ function CaseStudyCard({
       ref={ref}
       style={{ opacity }}
       {...props}
-      className="relative flex flex-col aspect-[4/6] w-72 shrink-0 snap-start scroll-ml-[var(--scroll-padding)] justify-end overflow-hidden rounded-[8px] sm:aspect-[4/6] sm:w-96 group"
+      className="relative flex flex-col aspect-[4/6] w-72 shrink-0 snap-start scroll-ml-[var(--scroll-padding)] justify-end overflow-hidden rounded-2xl sm:aspect-[4/6] sm:w-96 group"
     >
       <a
         href={url}
@@ -142,8 +142,8 @@ function CaseStudyCard({
   
           {/* Text content */}
           <div className="absolute bottom-0 left-0 right-0 p-6">
-            <p className="font-mono text-3xl font-medium sm:tracking-tighter text-white">{name}</p>
-            <p className="font-sans text-lg font-normal text-white pt-2">{title}</p>
+            <p className="font-san text-lg font-bold text-white">{name}</p>
+            <p className="font-mono text-3xl font-medium text-white pt-1 sm:tracking-tighter">{title}</p>
           </div>
         </div>
       </a>
@@ -172,14 +172,14 @@ export function CaseStudies() {
   }
 
   return (
-    <div className="overflow-hidden py-32">
+    <div className="overflow-hidden py-20">
       <Container>
         <div className="flex items-center gap-4">
           {/* Title */}
           <Link href="/case" aria-label="Case Studies" className="w-full">
-            <div className="text-3xl font-bold font-mono text-gray-800 flex items-center gap-x-2 hover:gap-x-4 transition-all duration-300 ease-in-out px-4">
+            <div className="text-xl font-bold font-mono text-gray-800 flex items-center gap-x-2 hover:gap-x-4 transition-all duration-300 ease-in-out">
               Case Studies
-              <ArrowRightIcon className="size-6" />
+              <ArrowRightIcon className="size-5" />
             </div>
           </Link>
 
@@ -210,7 +210,7 @@ export function CaseStudies() {
       <div
         ref={scrollRef}
         className={clsx([
-          'sm:mt-8 mt-4 flex sm:gap-8 gap-6 px-[var(--scroll-padding)]',
+          'sm:mt-6 mt-4 flex sm:gap-8 gap-6 px-[var(--scroll-padding)]',
           '[scrollbar-width:none] [&::-webkit-scrollbar]:hidden',
           'snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-smooth',
           '[--scroll-padding:max(theme(spacing.6),calc((100vw-720px)/2))] lg:[--scroll-padding:max(theme(spacing.8),calc((100vw-1280px)/2))]',
@@ -266,7 +266,7 @@ export function CaseStudiesGrid() {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative block overflow-hidden rounded-lg group"
+              className="relative block overflow-hidden rounded-2xl group"
             >
               {/* Image */}
               <img
@@ -283,8 +283,8 @@ export function CaseStudiesGrid() {
 
               {/* Text content */}
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="font-mono text-2xl font-medium sm:tracking-tighter text-white">{name}</p>
-                <p className="font-sans text-base font-normal text-white pt-2">{title}</p>
+                <p className="font-san text-lg font-bold text-white">{name}</p>
+                <p className="font-mono text-3xl font-medium text-white pt-1 sm:tracking-tighter">{title}</p>
               </div>
             </a>
           ))}

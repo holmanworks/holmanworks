@@ -15,8 +15,8 @@ export default function Case() {
       <Container className="bg-white sm:pb-6 pb-6">
         <Navbar />
 
-        <div className="mx-auto flex flex-col items-center max-w-[800px] gap-y-6 py-24">
-          <div className="sm:text-9xl text-7xl font-bold text-gray-800 flex items-center gap-x-4 hover:gap-x-6 transition-all duration-300 ease-in-out">
+        <div className="mx-auto flex flex-col py-10">
+          <div className="text-xl font-bold font-mono text-gray-800 flex gap-x-4 hover:gap-x-6 transition-all duration-300 ease-in-out">
             Case Studies
           </div>
 

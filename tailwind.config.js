@@ -10,7 +10,7 @@ module.exports = {
         xl: '1440px',
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        sans: ['Figtree', 'system-ui', 'sans-serif'],
         serif: ['Crimson Text', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'system-ui', 'sans-serif'],
       },

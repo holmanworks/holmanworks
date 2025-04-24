@@ -40,7 +40,7 @@ function Hero() {
 
           {/* <div className='w-1/4 h-[2px] bg-gray-950'></div> */}
 
-          <div className="text-base font-mono max-w-[620px] leading-5 font-normal text-gray-800 px-4 py-3 my-10">
+          <div className="text-base font-mono max-w-[620px] leading-5 font-normal text-gray-800 px-4 mt-10">
             Holman, I make products that look good, feel good, and do the job. From UX to front-end, concept to craft — I help startups and teams design smarter tools, stronger brands, and better ideas.
           </div>
 
@@ -71,9 +71,9 @@ function BentoSection() {
         className="flex flex-col"
       >
 
-        <div className="text-3xl font-bold font-mono text-gray-800 flex items-center gap-x-2 hover:gap-x-4 transition-all duration-300 ease-in-out px-4">
-          Showcase
-          <ArrowRightIcon className="size-6" />
+        <div className="text-xl font-bold font-mono text-gray-800 flex items-center gap-x-2 hover:gap-x-4 transition-all duration-300 ease-in-out">
+          Projects
+          <ArrowRightIcon className="size-5" />
         </div>
 
         <div className=" grid gap-4 sm:mt-8 mt-4 lg:grid-cols-6 grid-cols-1 lg:grid-rows-2">
@@ -81,24 +81,24 @@ function BentoSection() {
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/types/ai.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/ft-solve/builder.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/types/result.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/ft-solve/translation.png)] bg-contain bg-no-repeat bg-center" />
             }
-            className="lg:col-span-2 bg-sky-200/70"
+            className="lg:col-span-2 bg-indigo-200/70"
           />
 
           <BentoCard
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/ft-solve/condition.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/ft-discover/thumbnail1.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/ft-solve/translation.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/ft-discover/thumbnail2.png)] bg-contain bg-no-repeat bg-center" />
             }
-            className="lg:col-span-2 bg-indigo-200/70"
+            className="lg:col-span-2 bg-amber-200/60"
           />
 
           <BentoCard
@@ -112,19 +112,7 @@ function BentoSection() {
             }
             className="lg:col-span-2 bg-rose-200/70"
           />
-          
-          <BentoCard
-            title=""
-            description=""
-            graphic={
-              <div className="h-full bg-[url(/screenshots/ft-discover/thumbnail1.png)] bg-contain bg-no-repeat bg-center" />
-            }
-            hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/ft-discover/thumbnail2.png)] bg-contain bg-no-repeat bg-center" />
-            }
-            className="lg:col-span-2 bg-amber-200/60"
-          />
-          
+
           <BentoCard
             title=""
             description=""
@@ -141,10 +129,22 @@ function BentoSection() {
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/penyo/trial.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/types/ai.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/penyo/home.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/types/result.png)] bg-contain bg-no-repeat bg-center" />
+            }
+            className="lg:col-span-2 bg-sky-200/70"
+          />
+
+          <BentoCard
+            title=""
+            description=""
+            graphic={
+              <div className="h-full bg-[url(/screenshots/ft-assist/preview.png)] bg-contain bg-no-repeat bg-center" />
+            }
+            hoverGraphic={
+              <div className="h-full bg-[url(/screenshots/ft-assist/modal.png)] bg-contain bg-no-repeat bg-center" />
             }
             className="lg:col-span-2 bg-teal-200/70"
           />
@@ -164,18 +164,18 @@ export default function Home() {
       <Hero />
 
       <main>
-        
-        {/* <Container className="mt-10 opacity-90">
-          <LogoCloud />
-        </Container> */}
 
-        <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-10">
+        <div className="bg-gradient-to-b from-white from-50% to-gray-100 sm:py-20 py-16">
           <BentoSection />
         </div>
 
       </main>
 
       <CaseStudies />
+
+      {/* <Container className="my-10 opacity-40">
+        <LogoCloud />
+      </Container> */}
 
       <Footer />
 
