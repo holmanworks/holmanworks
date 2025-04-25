@@ -26,6 +26,12 @@ const testimonials = [
     url: 'https://docs.google.com/presentation/d/1wBCmaenxcehNCNh65VSPwlbsloMA2uk5Puxx_CLkcn4/edit?usp=sharing',
   },
   {
+    img: '/screenshots/case-system.png',
+    name: 'Forethought - Design System',
+    title: 'Building the first design system to scale AI product delivery',
+    url: 'https://docs.google.com/presentation/d/1qrcPJREW0WzEdXbySzHabDaCrQLonhPa00TZNNY30H4/edit?usp=sharing',
+  },
+  {
     img: '/screenshots/case-oursong.png',
     name: 'OurSong - Music NFT',
     title: 'From NFT Marketplace to VIP Music Community',
