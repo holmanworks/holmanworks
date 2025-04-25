@@ -28,7 +28,7 @@ const testimonials = [
   {
     img: '/screenshots/case-system.png',
     name: 'Forethought - Design System',
-    title: 'Building the first design system to scale AI product delivery',
+    title: 'Built the first design system to scale AI product delivery',
     url: 'https://docs.google.com/presentation/d/1qrcPJREW0WzEdXbySzHabDaCrQLonhPa00TZNNY30H4/edit?usp=sharing',
   },
   {
