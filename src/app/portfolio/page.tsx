@@ -111,7 +111,7 @@ const boardData = [
     ],
     name: "Forethought Design System",
     description: "Consistency, efficiency, collaboration and scalability",
-    category: "Design system",
+    category: "Design System",
     column: 4,
   },
   {
@@ -157,7 +157,7 @@ const boardData = [
     ],
     name: "Makesheets",
     description: "Personalize your child's learning",
-    category: "B2B",
+    category: "B2C",
     column: 4,
   },
   {
