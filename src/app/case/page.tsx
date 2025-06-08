@@ -19,10 +19,6 @@ export default function Case() {
           <div className="text-xl font-bold font-mono text-gray-800 flex gap-x-4 hover:gap-x-6 transition-all duration-300 ease-in-out">
             Case Studies
           </div>
-
-          {/* <h1 className="font-display font-semibold text-gray-800 text-center lg:text-8xl md:text-7xl sm:text-7xl text-4xl">
-            COMING <br /> SOON
-          </h1> */}
         </div>
 
         <CaseStudiesGrid />

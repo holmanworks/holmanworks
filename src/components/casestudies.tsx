@@ -22,7 +22,7 @@ const testimonials = [
   {
     img: '/screenshots/case-solve.png',
     name: 'Forethought - Workflow Builder',
-    title: 'Simplifying workflow creation for support teams',
+    title: 'Designing the UX framework for CS workflow creation',
     url: 'https://docs.google.com/presentation/d/1wBCmaenxcehNCNh65VSPwlbsloMA2uk5Puxx_CLkcn4/edit?usp=sharing',
   },
   {
