@@ -22,8 +22,8 @@ const testimonials = [
   {
     img: '/screenshots/case-solve.png',
     name: 'Forethought - Workflow Builder',
-    title: 'Designing the UX framework for CS workflow creation',
-    url: 'https://docs.google.com/presentation/d/1wBCmaenxcehNCNh65VSPwlbsloMA2uk5Puxx_CLkcn4/edit?usp=sharing',
+    title: 'Designing the AI-Powered Workflow Logic for Customer Support',
+    url: 'https://www.figma.com/deck/5w0jvYxCYQyJKzdIWtiLEh/Forethought----Customer-Service-Workflow-Builder?node-id=1-42&viewport=16%2C21%2C0.74&t=p98yzyjI2LhcsQB5-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
   },
   {
     img: '/screenshots/case-system.png',
