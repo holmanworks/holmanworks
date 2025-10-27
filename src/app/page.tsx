@@ -93,6 +93,18 @@ function BentoSection() {
             title=""
             description=""
             graphic={
+              <div className="h-full bg-[url(/screenshots/ft-assist/preview.png)] bg-contain bg-no-repeat bg-center" />
+            }
+            hoverGraphic={
+              <div className="h-full bg-[url(/screenshots/ft-assist/modal.png)] bg-contain bg-no-repeat bg-center" />
+            }
+            className="lg:col-span-2 bg-teal-200/70"
+          />
+
+          <BentoCard
+            title=""
+            description=""
+            graphic={
               <div className="h-full bg-[url(/screenshots/ft-discover/thumbnail1.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
@@ -135,18 +147,6 @@ function BentoSection() {
               <div className="h-full bg-[url(/screenshots/types/result.png)] bg-contain bg-no-repeat bg-center" />
             }
             className="lg:col-span-2 bg-sky-200/70"
-          />
-
-          <BentoCard
-            title=""
-            description=""
-            graphic={
-              <div className="h-full bg-[url(/screenshots/ft-assist/preview.png)] bg-contain bg-no-repeat bg-center" />
-            }
-            hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/ft-assist/modal.png)] bg-contain bg-no-repeat bg-center" />
-            }
-            className="lg:col-span-2 bg-teal-200/70"
           />
 
         </div>
