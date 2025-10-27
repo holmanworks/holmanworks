@@ -29,7 +29,7 @@ const testimonials = [
     img: '/screenshots/case-assist.png',
     name: 'Forethought - Generate Response',
     title: 'Designing the AI Response Experience for Human Agent',
-    url: 'https://www.figma.com/deck/vqRgmkSpDZRZ8iVEvjCSGs/Forethought----Customer-Service-Workflow-Builder--Copy-?node-id=1-42&t=X25D1FPnXdilQSVB-1',
+    url: 'https://www.figma.com/deck/vqRgmkSpDZRZ8iVEvjCSGs/Forethought----Generate-Response?node-id=1-42&t=X25D1FPnXdilQSVB-1',
   },
   {
     img: '/screenshots/case-system.png',
