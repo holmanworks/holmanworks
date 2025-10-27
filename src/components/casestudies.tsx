@@ -23,7 +23,13 @@ const testimonials = [
     img: '/screenshots/case-solve.png',
     name: 'Forethought - Workflow Builder',
     title: 'Designing the AI-Powered Workflow Logic for Customer Support',
-    url: 'https://www.figma.com/deck/5w0jvYxCYQyJKzdIWtiLEh/Forethought----Customer-Service-Workflow-Builder?node-id=1-42&viewport=16%2C21%2C0.74&t=p98yzyjI2LhcsQB5-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+    url: 'https://www.figma.com/deck/5w0jvYxCYQyJKzdIWtiLEh/Forethought----Customer-Service-Workflow-Builder?node-id=1-42&t=gc3zJtqx0pY88Ayp-1',
+  },
+  {
+    img: '/screenshots/case-assist.png',
+    name: 'Forethought - Generate Response',
+    title: 'Designing the AI Response Experience for Human Agent',
+    url: 'https://www.figma.com/deck/vqRgmkSpDZRZ8iVEvjCSGs/Forethought----Customer-Service-Workflow-Builder--Copy-?node-id=1-42&t=X25D1FPnXdilQSVB-1',
   },
   {
     img: '/screenshots/case-system.png',
@@ -48,12 +54,6 @@ const testimonials = [
     name: 'Forethought - SupportGPT Playground',
     title: "A sandbox lets companies test and customize bots with their data",
     url: 'https://docs.google.com/presentation/d/1N5_5yJyH4pVq8CyQ-w7tG5CL3t1_JFky0WLlka7G7gM/edit?usp=sharing',
-  },
-  {
-    img: '/screenshots/case-assist.png',
-    name: 'Forethought - Gen AI Response',
-    title: 'Gen AI suggests replies tailored to each ticket’s context',
-    url: 'https://docs.google.com/presentation/d/1ZeggOX9cvm2repa_423idjjRztpRyQeghJXlVmJLNbk/edit?usp=sharing',
   },
   {
     img: '/screenshots/case-discover.png',
