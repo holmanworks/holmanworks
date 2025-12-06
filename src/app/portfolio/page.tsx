@@ -8,7 +8,7 @@ import { Navbar } from "@/components/navbar";
 import Masonry from "react-masonry-css";
 import { useState, useEffect } from "react";
 
-const categories = ["All", "B2B", "B2C", "Design System", "Print", "Exhibition"];
+const categories = ["All", "B2B", "B2C", "Design System", "Marketing", "Exhibition", "Merchandise"];
 
 const boardData = [
   {
@@ -194,6 +194,51 @@ const boardData = [
     category: "B2C",
     column: 4,
   },
+  {
+    images: [
+      "/screenshots/marketing/galeai_banner.png",
+      "/screenshots/marketing/invaniti.png",
+      "/screenshots/marketing/furbo_banner.png",
+    ],
+    name: "Marketing",
+    description: "",
+    category: "Marketing",
+    column: 4,
+  },
+  {
+    images: [
+      "/screenshots/sony/ps3 poster.jpg",
+      "/screenshots/sony/ps3 poster sg.jpg",
+      "/screenshots/sony/resistance pop.jpg",
+      "/screenshots/sony/ps3 sleeve.jpg",
+      "/screenshots/sony/gr.jpg",
+      "/screenshots/sony/saru concept.jpg",
+      "/screenshots/sony/saru 3d.jpg",
+      "/screenshots/sony/saru merch.jpg",
+      "/screenshots/sony/prepare card.jpg",
+    ],
+    name: "Sony Playstation",
+    description: "Marketing Campaign",
+    category: "Marketing",
+    column: 5,
+  },
+  {
+    images: [
+      "/screenshots/sony/merch/ps3 jacket.jpg",
+      "/screenshots/sony/merch/ps3 shirt.jpg",
+      "/screenshots/sony/merch/ps3 bag.jpg",
+      "/screenshots/sony/merch/psp cushion design.jpg",
+      "/screenshots/sony/merch/psp cushion.jpg",
+      "/screenshots/sony/merch/saru bag.jpg",
+      "/screenshots/sony/merch/saru clip.jpg",
+      "/screenshots/sony/merch/we premium.jpg",
+      "/screenshots/sony/merch/calendar.jpg",
+    ],
+    name: "Sony Playstation",
+    description: "Merchandise",
+    category: "Merchandise",
+    column: 5,
+  },
 ];
 
 function Board({
@@ -236,14 +281,16 @@ function Board({
     return () => window.removeEventListener("resize", adjustColumns);
   }, [column]);
 
+
+  
   return (
     <div className="relative">
       <div className="flex flex-col items-center sm:pb-24 pb-12">
         <div className="md:py-20 py-10 gap-y-1 flex flex-col">
-          <p className="font-mono text-center md:text-xl text-base font-bold text-white sm:tracking-tight">
+          <p className="font-title text-center md:text-xl text-base font-bold text-white">
             {name}
           </p>
-          <p className="font-mono text-center md:text-4xl sm:text-2xl text-xl font-normal sm:tracking-tighter text-white">
+          <p className="font-sans text-center md:text-3xl sm:text-2xl text-xl font-medium text-white">
             {description}
           </p>
         </div>
@@ -278,8 +325,7 @@ export default function Portfolio() {
 
   return (
     <main className="overflow-hidden bg-black">
-      <GradientBackground />
-
+      
       <Container className="bg-white sm:pb-6 pb-6">
         <Navbar />
       </Container>
@@ -289,7 +335,7 @@ export default function Portfolio() {
         {categories.map((category) => (
           <button
             key={category}
-            className={`rounded-full text-base font-mono font-semibold transition h-10 px-4 ${
+            className={`rounded-full text-base font-sans font-semibold transition h-10 px-4 ${
               selectedCategory === category
                 ? "bg-white text-black"
                 : "ring-1 ring-inset ring-white/40 text-white/80 hover:bg-white/10"
@@ -303,9 +349,9 @@ export default function Portfolio() {
 
       {/* Display Boards Based on Selected Category */}
       <div className="xl:p-20 sm:p-10 p-6">
-        {filteredBoards.map((item, index) => (
+        {filteredBoards.map((item) => (
           <Board
-            key={index}
+            key={item.name}
             name={item.name}
             description={item.description}
             images={item.images}

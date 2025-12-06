@@ -1,92 +1,89 @@
 import { BentoCard } from '@/components/bento-card'
-import { Button } from '@/components/button'
 import { Container } from '@/components/container'
-import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
-import { Keyboard } from '@/components/keyboard'
-import { Link } from '@/components/link'
-import { LinkedAvatars } from '@/components/linked-avatars'
-import { LogoCloud } from '@/components/logo-cloud'
-import { LogoCluster } from '@/components/logo-cluster'
-import { LogoTimeline } from '@/components/logo-timeline'
-import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
-import { CaseStudies } from '@/components/casestudies'
-import { Heading, Subheading } from '@/components/text'
-import { ArrowRightIcon } from '@heroicons/react/24/outline'
+import { CaseStudies } from '@/components/works'
+import { Link } from '@/components/link'
 import type { Metadata } from 'next'
+import Image from 'next/image'
+import { ArrowRightIcon } from '@heroicons/react/24/outline'
+
 
 export const metadata: Metadata = {
-  description:""
+  description: '',
 }
 
 function Hero() {
   return (
-    <div className="relative">
-      {/* <Gradient className="absolute xl:inset-4 lg:inset-3 md:inset-3 sm:inset-3 inset-2 bottom-0 rounded-[32px] ring-1 ring-inset ring-black/5" /> */}
-      <Container className="relative">
+    <div className="relative mt-10 px-5 ml-5 w-full md:w-[360px]">
+      <div className="flex flex-col justify-center gap-5">
+        <Image
+          alt=""
+          src="/holmanworks-icon/avatar2.png"
+          width={80}
+          height={80}
+          className="w-[80px] h-[80px] rounded-full object-cover"
+        />
 
-        <Navbar/>
-
-        <div className="flex flex-col justify-center">
-
-          {/* <div className="sm:text-6xl text-4xl font-bold sm:tracking-tight text-gray-800 sm:mb-1 mb-0">
-            holman
-          </div>
-
-          <div className="lg:text-3xl md:text-2xl sm:text-2xl text-xl font-normal font-serif text-gray-800 mb-6">
-            [ <span className='italic'>Design consultant / Design leader / Designer</span> ]
-          </div> */}
-
-          {/* <div className='w-1/4 h-[2px] bg-gray-950'></div> */}
-
-          <div className="text-base font-mono max-w-[620px] leading-5 font-normal text-gray-800 px-4 mt-10">
-            Holman, I make products that look good, feel good, and do the job. From UX to front-end, concept to craft — I help startups and teams design smarter tools, stronger brands, and better ideas.
-          </div>
-
-          {/* <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Get started</Button>
-            <Button variant="secondary" href="/pricing">
-              See pricing
-            </Button>
-          </div> */}
-
+        <div className="text-xl font-title font-semibold text-gray-800">
+          holman
         </div>
-      </Container>
+
+        <div className="text-base font-sans leading-5 font-normal text-gray-800 space-y-4">
+          <p>
+            A Sr. Product Designer from Los Angeles, experienced in B2B platforms, mobile apps, and scalable design systems. 
+            I lead product design for startup and enterprise teams, 
+            and currently run a design consultancy helping companies in building digital and AI products.
+          </p>
+
+          <p>
+            My work also helps marketing shape user journeys and content strategy to increase brand and customer engagement.
+          </p>
+        </div>
+
+        <div className="mt-5">
+          <BentoSection />
+        </div>
+      </div>
     </div>
   )
 }
 
-
 function BentoSection() {
   return (
-    <Container>
-      {/* <div className="text-7xl font-medium tracking-tight max-w-3xl">
-        My recent work
-      </div> */}
+    <div>
+      <Link href="/portfolio" aria-label="My work" className="flex flex-col">
+        <div className="flex items-center justify-between text-xl font-semibold font-title text-gray-800">
+          <span>portfolio</span>
 
-      <Link
-        href="/portfolio"
-        aria-label="My work"
-        className="flex flex-col"
-      >
-
-        <div className="text-xl font-bold font-mono text-gray-800 flex items-center gap-x-2 hover:gap-x-4 transition-all duration-300 ease-in-out">
-          Projects
-          <ArrowRightIcon className="size-5" />
+          <span className="flex items-center gap-1 text-base font-title font-normal text-gray-500 hover:text-gray-800">
+            <span>See all</span>
+            <ArrowRightIcon className="size-4" />
+          </span>
         </div>
 
-        <div className=" grid gap-4 sm:mt-8 mt-4 lg:grid-cols-6 grid-cols-1 lg:grid-rows-2">
+        <div className="grid gap-1 mt-4 grid-cols-2">
           <BentoCard
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/ft-solve/builder.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/ft-solve/article.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/ft-solve/translation.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="" />
             }
-            className="lg:col-span-2 bg-indigo-200/70"
+            className="bg-black/5"
+          />
+
+          <BentoCard
+            title=""
+            description=""
+            graphic={
+              <div className="h-full bg-[url(/screenshots/oursong/wallet.png)] bg-contain bg-no-repeat bg-center" />
+            }
+            hoverGraphic={
+              <div className="" />
+            }
+            className="bg-black/5"
           />
 
           <BentoCard
@@ -96,21 +93,9 @@ function BentoSection() {
               <div className="h-full bg-[url(/screenshots/ft-assist/preview.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/ft-assist/modal.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="" />
             }
-            className="lg:col-span-2 bg-teal-200/70"
-          />
-
-          <BentoCard
-            title=""
-            description=""
-            graphic={
-              <div className="h-full bg-[url(/screenshots/ft-discover/thumbnail1.png)] bg-contain bg-no-repeat bg-center" />
-            }
-            hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/ft-discover/thumbnail2.png)] bg-contain bg-no-repeat bg-center" />
-            }
-            className="lg:col-span-2 bg-amber-200/60"
+            className="bg-black/5"
           />
 
           <BentoCard
@@ -120,65 +105,63 @@ function BentoSection() {
               <div className="h-full bg-[url(/screenshots/makesheets/preview.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/makesheets/practice.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="" />
             }
-            className="lg:col-span-2 bg-rose-200/70"
+            className="bg-black/5"
           />
 
           <BentoCard
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/oursong/home.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/types/searching.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/oursong/community.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="" />
             }
-            className="lg:col-span-2 bg-fuchsia-200/60"
+            className="bg-black/5"
           />
 
           <BentoCard
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/types/ai.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/ft-widget/widget1.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
-              <div className="h-full bg-[url(/screenshots/types/result.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="" />
             }
-            className="lg:col-span-2 bg-sky-200/70"
+            className="bg-black/5"
           />
 
         </div>
-
       </Link>
-    </Container>
+    </div>
   )
 }
 
-
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="flex flex-col overflow-hidden">
+      <Container>
+        <Navbar />
+      </Container>
 
-      <Hero />
+      <div className="flex-1">
+        <div className="mx-auto max-w-[1280px] h-full flex flex-col md:flex-row md:divide-x divide-y md:divide-y-0 divide-gray-100">
 
-      <main>
+          <div className="flex-1 overflow-y-auto flex justify-center">
+            <div className="w-full max-w-[720px]">
+              <CaseStudies />
+            </div>
+          </div>
 
-        <div className="bg-gradient-to-b from-white from-50% to-gray-100 sm:py-20 py-16">
-          <BentoSection />
+          <div className="min-w-[380px] flex-shrink-0">
+            <Hero />
+          </div>
+          
         </div>
-
-      </main>
-
-      <CaseStudies />
-
-      {/* <Container className="my-10 opacity-40">
-        <LogoCloud />
-      </Container> */}
-
-      <Footer />
-
+      </div>
     </div>
   )
 }

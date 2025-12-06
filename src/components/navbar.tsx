@@ -10,12 +10,14 @@ import { motion } from 'framer-motion'
 import { Link } from './link'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 import { Icon } from './logo'
+import Image from 'next/image'
+
 
 
 const links = [
-  { href: '/portfolio', label: 'Projects' },
-  { href: '/case', label: 'Case Studies' },
-  { href: '/about', label: 'About' },
+  { href: '/', label: 'holmanworks' },
+  { href: '/portfolio', label: 'portfolio' },
+  { href: '/about', label: 'about' },
 ]
 
 function DesktopNav() {
@@ -25,7 +27,7 @@ function DesktopNav() {
         <PlusGridItem key={href} className="relative flex">
           <Link
             href={href}
-            className="flex items-center px-4 py-3 font-mono text-base font-medium text-gray-950/80 data-[hover]:text-gray-950 bg-blend-multiply data-[hover]:bg-gray-200/50"
+            className="flex items-center px-4 py-3 font-title text-base font-base text-gray-800 data-[hover]:text-gray-950 bg-blend-multiply data-[hover]:bg-gray-200/50"
           >
             {label}
           </Link>
@@ -90,7 +92,7 @@ function SocialLinks() {
         href="https://www.linkedin.com/in/holmanworks/"
         target="_blank"
         aria-label="Visit us on LinkedIn"
-        className="text-gray-950/80 data-[hover]:text-[#0077b5] p-5 items-center flex bg-blend-multiply data-[hover]:bg-gray-200/50"
+        className="text-gray-950/80 data-[hover]:text-[#0077b5] p-4 items-center flex bg-blend-multiply data-[hover]:bg-gray-200/50"
       >
         <SocialIconLinkedIn className="size-5" />
       </Link>
@@ -100,7 +102,7 @@ function SocialLinks() {
 
 export function Navbar({ banner }: { banner?: React.ReactNode }) {
   return (
-    <Disclosure as="header" className="sm:pt-16 pt-12">
+    <Disclosure as="header" className="pt-12">
       <PlusGrid>
 
         <PlusGridRow className="relative flex justify-between">
@@ -111,28 +113,23 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               <Link 
                 href="/" 
                 title="Home"
-                className="flex items-center px-4 py-3 font-mono text-base font-medium text-gray-950/80 data-[hover]:text-gray-950 bg-blend-multiply data-[hover]:bg-gray-200/50"
-              >Hi, I am...
-
-                {/* <div className="size-16 relative bg-no-repeat bg-center bg-cover" 
-                    style={{
-                      backgroundImage: `url('/holmanworks-icon/avatar2.png')`
-                    }}
-                >
-                  <div 
-                    className="absolute inset-0 bg-no-repeat bg-center bg-cover opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out"
-                    style={{
-                      backgroundImage: `url('/holmanworks-icon/avatar.png')`
-                    }}
-                  ></div>
-                </div> */}
-
+                className="flex items-center px-3 py-3 font-title text-base font-base text-gray-800 bg-blend-multiply data-[hover]:bg-gray-200/50"
+              >
+                <Image
+                  alt=""
+                  src="/holmanworks-icon/ho2.png"
+                  width={512}
+                  height={512}
+                  className="w-[28px] h-[28px] rounded-[0px] object-cover"
+                />
               </Link>
             </PlusGridItem>
           </div>
 
           {/* Nav Center */}
-          <DesktopNav />
+          <div className="flex flex-1 ml-[1px]">
+            <DesktopNav />
+          </div>
 
           {/* Nav right */}
           <div className='flex flex-1 justify-end'>

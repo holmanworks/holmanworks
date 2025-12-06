@@ -23,3 +23,28 @@
 .masonry-grid img {
   margin-bottom: 12px; /* Adjust spacing between items */
 }
+
+/* Sailec */
+@layer base {
+  @font-face {
+    font-family: "Sailec";
+    font-weight: 400;
+    src: url('../fonts/Sailec-Regular.otf') format('opentype');
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Sailec";
+    font-weight: 500;
+    src: url('../fonts/Sailec-Medium.otf') format('opentype');
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Sailec";
+    font-weight: 700;
+    src: url('../fonts/Sailec-Bold.otf') format('opentype');
+  }
+}

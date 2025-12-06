@@ -10,9 +10,9 @@ module.exports = {
         xl: '1440px',
       },
       fontFamily: {
-        sans: ['Figtree', 'system-ui', 'sans-serif'],
-        serif: ['Crimson Text', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'], // For body text
+        title: ['Kreon', 'sans-serif'], // For body text
+        display: ['plus jakarta sans', 'sans-serif'], // For headings
       },
       fontWeight:{
         normal: '400',
@@ -23,44 +23,53 @@ module.exports = {
       fontSize:{
         xs:['10px', '12px'],
         sm:['12px', '16px'],
-        base:['14px', '18px'],
-        lg:['16px', '22px'],
-        xl:['18px', '24px'],
+        'base':['14px',{
+          lineHeight: '18px',
+          letterSpacing: '-.1px',
+        }],
+        'lg':['16px',{
+          lineHeight: '21px',
+          letterSpacing: '-.2px',
+        }],
+        'xl':['18px',{
+          lineHeight: '22px',
+          letterSpacing: '-.2px',
+        }],
         '2xl':['20px',{
-          lineHeight: '26px',
-          letterSpacing: '-.25px',
+          lineHeight: '24px',
+          letterSpacing: '-.2px',
         }],
         '3xl':['24px',{
-          lineHeight: '30px',
+          lineHeight: '29px',
+          letterSpacing: '-.3px',
+        }],
+        '4xl':['32px',{
+          lineHeight: '36px',
           letterSpacing: '-.5px',
         }],
-        '4xl':['28px',{
-          lineHeight: '34px',
+        '5xl':['36px',{
+          lineHeight: '40px',
           letterSpacing: '-.5px',
         }],
-        '5xl':['32px',{
-          lineHeight: '38px',
-          letterSpacing: '-.5px',
-        }],
-        '6xl':['36px',{
-          lineHeight: '42px',
-          letterSpacing: '-.75px',
+        '6xl':['40px',{
+          lineHeight: '40px',
+          letterSpacing: '-1px',
         }],
         '7xl':['48px',{
-          lineHeight: '50px',
-          letterSpacing: '-1.5px',
+          lineHeight: '48px',
+          letterSpacing: '-1px',
         }],
         '8xl':['56px',{
-          lineHeight: '58px',
-          letterSpacing: '-2px',
+          lineHeight: '56px',
+          letterSpacing: '-1px',
         }],
         '9xl':['64px',{
-          lineHeight: '66px',
-          letterSpacing: '-3px',
+          lineHeight: '64px',
+          letterSpacing: '-1px',
         }],
         '10xl':['72px',{
           lineHeight: '72px',
-          letterSpacing: '-1px',
+          letterSpacing: '-1.5px',
         }],
       },
     },

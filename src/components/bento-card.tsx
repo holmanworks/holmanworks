@@ -27,7 +27,7 @@ export function BentoCard({
       )}
     >
       {/* Graphic container */}
-      <div className="relative h-[400px] shrink-0">
+      <div className="relative aspect-square shrink-0">
         {/* Default graphic */}
         <motion.div
           initial="visible"
@@ -37,7 +37,7 @@ export function BentoCard({
             visible: { opacity: 1, transition: { duration: 0.2 } },
             hidden: { opacity: 0, transition: { duration: 0.2 } },
           }}
-          className="absolute inset-0 p-7"
+          className="absolute inset-0 p-3"
         >
           {graphic}
         </motion.div>

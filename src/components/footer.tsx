@@ -134,7 +134,7 @@ export function Footer() {
   return (
     <footer>
         <Container className='bg-white'>
-          <PlusGrid className="pb-16 sm:pt-6 pt-6">
+          <PlusGrid className="pb-12">
 
             <PlusGridRow>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
