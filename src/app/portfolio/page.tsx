@@ -145,21 +145,22 @@ const boardData = [
     description: "Personalize your child's learning",
     category: "B2C",
     column: 2,
+    url: "https://chimoya.org", // ← put your real link here
   },
   {
     images: [
       "/screenshots/furbo/01.png",
       "/screenshots/furbo/02.png",
       "/screenshots/furbo/03.png",
-      "/screenshots/furbo/04.gif",
-      "/screenshots/furbo/05.png",
-      "/screenshots/furbo/07.gif",
-      "/screenshots/furbo/08.png",
-      "/screenshots/furbo/09.png",
-      "/screenshots/furbo/a1.png",
       "/screenshots/furbo/a2.png",
+      "/screenshots/furbo/04.gif",
+      "/screenshots/furbo/a1.png",
+      "/screenshots/furbo/05.png",
       "/screenshots/furbo/a3.png",
+      "/screenshots/furbo/07.gif",
+      "/screenshots/furbo/09.png",
       "/screenshots/furbo/a4.png",
+      "/screenshots/furbo/08.png",
     ],
     name: "Furbo",
     description: "Smart pet camera and treat system",
@@ -251,11 +252,13 @@ function Board({
   description,
   images,
   column, // desktop: 2 / 4 / 6
+  url,
 }: {
   name: string;
   description: string;
   images: string[];
   column: number;
+  url?: string;
 }) {
   const [columns, setColumns] = useState(column);
 
@@ -297,9 +300,21 @@ function Board({
           <p className="font-title text-center md:text-xl text-base font-bold text-white">
             {name}
           </p>
+
           <p className="font-sans text-center md:text-3xl sm:text-2xl text-xl font-medium text-white">
             {description}
           </p>
+
+          {url && (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-title mt-0.5 text-center text-white/75 underline underline-offset-4 hover:text-white hover:no-underline transition block"
+            >
+              Try it now
+            </a>
+          )}
         </div>
 
         <Masonry
@@ -363,6 +378,7 @@ export default function Portfolio() {
             description={item.description}
             images={item.images}
             column={item.column}
+            url={item.url} 
           />
         ))}
       </div>
