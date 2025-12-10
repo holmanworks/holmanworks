@@ -203,9 +203,8 @@ const boardData = [
     images: [
       "/screenshots/marketing/galeai_banner.png",
       "/screenshots/marketing/invaniti.png",
-      "/screenshots/marketing/furbo_banner.png",
     ],
-    name: "Marketing",
+    name: "Other Marketing",
     description: "",
     category: "Marketing",
     column: 4,

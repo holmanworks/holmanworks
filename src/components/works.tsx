@@ -63,7 +63,7 @@ const testimonials = [
 const posts = [
   {
     image: '/screenshots/ft-solve/cover.png',
-    icon: '/screenshots/forethought_ai_logo.jpg',
+    icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
     title: 'Designing the AI-Powered Workflow Logic for Customer Support',
     excerpt:
@@ -73,7 +73,7 @@ const posts = [
   },
   {
     image: '/screenshots/ft-assist/cover.png',
-    icon: '/screenshots/forethought_ai_logo.jpg',
+    icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
     title: 'Designing the AI Response Experience for Human Agents',
     excerpt:
@@ -83,7 +83,7 @@ const posts = [
   },
   {
     image: '/screenshots/ft-solve/cover_copy.png',
-    icon: '/screenshots/forethought_ai_logo.jpg',
+    icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
     title: 'Creating Reusable Steps to Simplify Workflow Building',
     excerpt:
@@ -93,7 +93,7 @@ const posts = [
   },
   {
     image: '/screenshots/ft-widget/cover_live.png',
-    icon: '/screenshots/forethought_ai_logo.jpg',
+    icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
     title: 'Designing the AI to Human Chat Handoff',
     excerpt:
@@ -103,7 +103,7 @@ const posts = [
   },
   {
     image: '/screenshots/ft-designsystem/cover.png',
-    icon: '/screenshots/forethought_ai_logo.jpg',
+    icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
     title: 'Built the first Design System to scale AI product delivery',
     excerpt:
@@ -113,7 +113,7 @@ const posts = [
   },
   {
     image: '/screenshots/furbo/cover.png',
-    icon: '/screenshots/furbo_logo.png',
+    icon: '/screenshots/furbo-logo.svg',
     company: 'Furbo',
     title: 'Simplifying IoT Setup and Onboarding for Dog Camera',
     excerpt:
@@ -149,7 +149,7 @@ export function CaseStudies() {
                   src={post.icon}
                   width={20}
                   height={20}
-                  className="w-[20px] h-[20px] rounded-[0px] object-cover"
+                  className="w-[20px] h-[20px] rounded-[2px] object-cover"
                 />
                 <div className="text-base font-sans font-normal text-gray-900">
                   {post.company}
