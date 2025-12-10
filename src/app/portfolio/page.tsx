@@ -13,6 +13,18 @@ const categories = ["All", "B2B", "B2C", "Design System", "Marketing", "Exhibiti
 const boardData = [
   {
     images: [
+      "/screenshots/ft-assist/click.png",
+      "/screenshots/ft-assist/writing.png",
+      "/screenshots/ft-assist/preview.png",
+      "/screenshots/ft-assist/modal.png",
+    ],
+    name: "Forethought Assist",
+    description: "Provides agents with AI-guided responses",
+    category: "B2B",
+    column: 2,
+  },  
+  {
+    images: [
       "/screenshots/ft-solve/1.png",
       "/screenshots/ft-solve/builder.png",
       "/screenshots/ft-solve/translation.png",
@@ -27,33 +39,28 @@ const boardData = [
       "/screenshots/ft-widget/configuration.png",
       "/screenshots/ft-solve/2.png",
       "/screenshots/ft-solve/preview2.png",
-      "/screenshots/ft-solve/2-1.png",
       "/screenshots/ft-solve/2-2.png",
       "/screenshots/ft-solve/2-3.png",
-      "/screenshots/ft-solve/2-4.png",
-      "/screenshots/ft-solve/2-5.png",
-      "/screenshots/ft-solve/2-6.png",
 
     ],
     name: "Forethought Solve",
     description: "Build automated workflows for customer service",
     category: "B2B",
-    column: 4,
+    column: 2,
   },
   {
     images: [
       "/screenshots/ft-discover/dashboard.png",
-      "/screenshots/ft-discover/impact.png",
       "/screenshots/ft-discover/details.png",
+      "/screenshots/ft-discover/impact.png",
       "/screenshots/ft-discover/article.png",
-      "/screenshots/ft-discover/table.png",
       "/screenshots/ft-discover/filter1.png",
       "/screenshots/ft-discover/filter2.png",
     ],
     name: "Forethought Discover",
     description: "AI-powered customer support insights",
     category: "B2B",
-    column: 4,
+    column: 2,
   },
   {
     images: [
@@ -64,22 +71,8 @@ const boardData = [
     name: "Forethought SupportGPT",
     description: "A sandbox lets companies test GenAI bots with their data",
     category: "B2B",
-    column: 4,
+    column: 2,
   },
-  {
-    images: [
-      "/screenshots/ft-assist/click.png",
-      "/screenshots/ft-assist/writing.png",
-      "/screenshots/ft-assist/preview.png",
-      "/screenshots/ft-assist/dropdown.png",
-      "/screenshots/ft-assist/extension.png",
-      "/screenshots/ft-assist/modal.png",
-    ],
-    name: "Forethought Assist",
-    description: "Provides agents with AI-guided responses",
-    category: "B2B",
-    column: 4,
-  },  
   {
     images: [
       "/screenshots/ft-widget/widget1.png",
@@ -92,7 +85,7 @@ const boardData = [
     name: "Forethought Widget",
     description: "AI-powered assistant platforms for self-service support",
     category: "B2C",
-    column: 7,
+    column: 4,
   },
   {
     images: [
@@ -112,7 +105,7 @@ const boardData = [
     name: "Forethought Design System",
     description: "Consistency, efficiency, collaboration and scalability",
     category: "Design System",
-    column: 4,
+    column: 2,
   },
   {
     images: [
@@ -129,36 +122,49 @@ const boardData = [
       "/screenshots/oursong/voucher.png",
       "/screenshots/oursong/create1.png",
       "/screenshots/oursong/create2.png",
-      "/screenshots/oursong/create3.png",
-      "/screenshots/oursong/create4.png",
       "/screenshots/oursong/create5.png",
       "/screenshots/oursong/complete.png",
     ],
     name: "OurSong",
     description: "Blockchain-based social NFT platform",
     category: "B2C",
-    column: 7,
+    column: 6,
   },
   {
     images: [
-      "/screenshots/makesheets/preview.png",
-      "/screenshots/makesheets/share.png",
-      "/screenshots/makesheets/score.png",
-      "/screenshots/makesheets/answer.png",
-      "/screenshots/makesheets/practice.png",
+      "/screenshots/makesheets/logo.png",
       "/screenshots/makesheets/home.png",
       "/screenshots/makesheets/settings.png",
       "/screenshots/makesheets/summary.png",
-      "/screenshots/makesheets/1.png",
-      "/screenshots/makesheets/2.png",
-      "/screenshots/makesheets/3.png",
-      "/screenshots/makesheets/4.png",
-      "/screenshots/makesheets/5.png",
+      "/screenshots/makesheets/preview.png",
+      "/screenshots/makesheets/share.png",
+      "/screenshots/makesheets/practice.png",
+      "/screenshots/makesheets/score.png",
     ],
-    name: "Makesheets",
+    name: "Chimoya",
     description: "Personalize your child's learning",
     category: "B2C",
-    column: 4,
+    column: 2,
+  },
+  {
+    images: [
+      "/screenshots/furbo/01.png",
+      "/screenshots/furbo/02.png",
+      "/screenshots/furbo/03.png",
+      "/screenshots/furbo/04.gif",
+      "/screenshots/furbo/05.png",
+      "/screenshots/furbo/07.gif",
+      "/screenshots/furbo/08.png",
+      "/screenshots/furbo/09.png",
+      "/screenshots/furbo/a1.png",
+      "/screenshots/furbo/a2.png",
+      "/screenshots/furbo/a3.png",
+      "/screenshots/furbo/a4.png",
+    ],
+    name: "Furbo",
+    description: "Smart pet camera and treat system",
+    category: "B2C",
+    column: 6,
   },
   {
     images: [
@@ -170,12 +176,13 @@ const boardData = [
       "/screenshots/types/listening.png",
     ],
     name: "TypeS",
-    description: "AI-powered automotive bulb finder",
+    description: "AI-powered automotive light bulb finder",
     category: "B2C",
-    column: 7,
+    column: 6,
   },
   {
     images: [
+      "/screenshots/penyo/logo.png",
       "/screenshots/penyo/signin.png",
       "/screenshots/penyo/gender.png",
       "/screenshots/penyo/name.png",
@@ -184,15 +191,12 @@ const boardData = [
       "/screenshots/penyo/home.png",
       "/screenshots/penyo/configuration.png",
       "/screenshots/penyo/setting.png",
-      "/screenshots/penyo/logo.png",
-      "/screenshots/penyo/colors.png",
       "/screenshots/penyo/component.png",
-      "/screenshots/penyo/landing.png",
     ],
     name: "Penyo",
     description: "AI-powered companion for elderly",
     category: "B2C",
-    column: 4,
+    column: 2,
   },
   {
     images: [
@@ -220,7 +224,7 @@ const boardData = [
     name: "PlayStation Marketing",
     description: "Marketing campaigns & packaging",
     category: "Marketing",
-    column: 5,
+    column: 4,
   },
   {
     images: [
@@ -237,15 +241,16 @@ const boardData = [
     name: "PlayStation Merchandise",
     description: "Promotional products",
     category: "Merchandise",
-    column: 5,
+    column: 4,
   },
 ];
+
 
 function Board({
   name,
   description,
   images,
-  column,
+  column, // desktop: 2 / 4 / 6
 }: {
   name: string;
   description: string;
@@ -257,20 +262,22 @@ function Board({
   useEffect(() => {
     const adjustColumns = () => {
       let newColumns = column;
+      const width = window.innerWidth;
 
-      if (window.innerWidth < 480) {
-        newColumns = column === 7 ? 2 : 1;
-      } else if (window.innerWidth >= 480 && window.innerWidth < 768) {
-        newColumns = column === 7 ? 3 : 2;
-      } else if (window.innerWidth >= 768 && window.innerWidth < 1280) {
-        newColumns = column === 7 ? 5 : 3;
-      } else if (window.innerWidth >= 1280 && window.innerWidth < 1440) {
-        newColumns = column === 7 ? 6 : 4;
-      } else {
-        newColumns = column;
+      // Large screens ≥ 1280px
+      if (width >= 1280) {
+        newColumns = column; // 2, 4, or 6 (as defined in boardData)
+      }
+      // Medium screens 768px–1279px
+      else if (width >= 768) {
+        newColumns = column === 2 ? 2 : 3;
+      }
+      // Small screens < 768px
+      else {
+        newColumns = column === 2 ? 1 : 2;
       }
 
-      // ✅ Prevent empty columns when images are fewer than columns
+      // Avoid empty columns if fewer images
       newColumns = Math.min(newColumns, images.length);
 
       setColumns(newColumns);
@@ -279,7 +286,7 @@ function Board({
     adjustColumns();
     window.addEventListener("resize", adjustColumns);
     return () => window.removeEventListener("resize", adjustColumns);
-  }, [column]);
+  }, [column, images.length]);
 
 
   
