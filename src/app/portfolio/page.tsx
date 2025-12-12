@@ -85,7 +85,7 @@ const boardData = [
     name: "Forethought Widget",
     description: "AI-powered assistant platforms for self-service support",
     category: "B2C",
-    column: 4,
+    column: 6,
   },
   {
     images: [
@@ -97,10 +97,10 @@ const boardData = [
       "/screenshots/ft-designsystem/input.png",
       "/screenshots/ft-designsystem/filter.png",
       "/screenshots/ft-designsystem/menu.png",
-      "/screenshots/ft-designsystem/tabs.png",
-      "/screenshots/ft-designsystem/sidebar.png",
       "/screenshots/ft-designsystem/toast.png",
       "/screenshots/ft-designsystem/others.png",
+      "/screenshots/ft-designsystem/tabs.png",
+      "/screenshots/ft-designsystem/sidebar.png",
     ],
     name: "Forethought Design System",
     description: "Consistency, efficiency, collaboration and scalability",
@@ -243,6 +243,20 @@ const boardData = [
     category: "Merchandise",
     column: 4,
   },
+  {
+    images: [
+      "/screenshots/sony/2011-tpgs/2011-tpgs-01.png",
+      "/screenshots/sony/2011-tpgs/2011-tpgs-02.png",
+      "/screenshots/sony/2011-tpgs/2011-tpgs-03.png",
+      "/screenshots/sony/2011-tpgs/2011-tpgs-04.png",
+      "/screenshots/sony/2011-tpgs/2011-tpgs-05.png",
+      "/screenshots/sony/2011-tpgs/2011-tpgs-06.png",
+    ],
+    name: "PlayStation Exhibition",
+    description: "2011 Taipei Game Show ",
+    category: "Exhibition",
+    column: 3,
+  },
 ];
 
 
@@ -370,9 +384,9 @@ export default function Portfolio() {
 
       {/* Display Boards Based on Selected Category */}
       <div className="xl:p-20 sm:p-10 p-6">
-        {filteredBoards.map((item) => (
+        {filteredBoards.map((item, index) => (
           <Board
-            key={item.name}
+            key={index}
             name={item.name}
             description={item.description}
             images={item.images}

@@ -109,7 +109,7 @@ const posts = [
     excerpt:
       '',
     date: '',
-    url: 'https://www.figma.com/deck/b6g8xcEHwxGa37aMIOvCX2/Forethought---Widget---Live-Chat?node-id=0-1&t=NboPv9h40CztD7Wv-1',
+    url: 'https://www.figma.com/deck/DEzpolTOT8gKP8HftkDlNg/Forethought---Design-System?node-id=0-1&t=oc3MBS21gSisOmlt-1',
   },
   {
     image: '/screenshots/furbo/cover.png',
