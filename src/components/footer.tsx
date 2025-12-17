@@ -5,6 +5,8 @@ import { Gradient } from './gradient'
 import { Link } from './link'
 import { Logo } from './logo'
 import { Subheading } from './text'
+import Image from 'next/image'
+
 
 function CallToAction() {
   return (
@@ -31,11 +33,11 @@ function CallToAction() {
 }
 
 function SitemapHeading({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-base font-mono font-normal text-gray-950/50">{children}</h3>
+  return <h3 className="text-base font-sans font-normal text-gray-950/50">{children}</h3>
 }
 
 function SitemapLinks({ children }: { children: React.ReactNode }) {
-  return <ul className="font-mono font-medium mt-6 space-y-4 text-base">{children}</ul>
+  return <ul className="font-title font-normal space-y-2 text-base">{children}</ul>
 }
 
 function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
@@ -43,7 +45,7 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
     <li>
       <Link
         {...props}
-        className="font-medium text-gray-950 data-[hover]:text-gray-950/75 data-[hover]:underline"
+        className="font-title text-base font-normal text-gray-950 data-[hover]:text-gray-950/75 data-[hover]:underline"
       />
     </li>
   )
@@ -53,18 +55,17 @@ function Sitemap() {
   return (
     <>
       <div>
-        <SitemapHeading>Menu</SitemapHeading>
+        {/* <SitemapHeading>Menu</SitemapHeading> */}
         <SitemapLinks>
-          <SitemapLink href="/">Home</SitemapLink>
-          <SitemapLink href="/portfolio">Portfolio</SitemapLink>
-          <SitemapLink href="/case">Case Studies</SitemapLink>
-          <SitemapLink href="/about">About</SitemapLink>
+          <SitemapLink href="/">home</SitemapLink>
+          <SitemapLink href="/portfolio">portfolio</SitemapLink>
+          <SitemapLink href="/about">about</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Contact</SitemapHeading>
+        {/* <SitemapHeading>Contact</SitemapHeading> */}
         <SitemapLinks>
-          <SitemapLink href="mailto:holmanyuen84@gmail.com">Email</SitemapLink>
+          <SitemapLink href="mailto:holmanyuen84@gmail.com">email</SitemapLink>
           <SitemapLink
             href="https://www.linkedin.com/in/holmanworks/"
             target="_blank"
@@ -72,7 +73,7 @@ function Sitemap() {
           >
             Linkedin
           </SitemapLink>
-            <SitemapLink href="/company">Resume</SitemapLink>
+            {/* <SitemapLink href="/company">Resume</SitemapLink> */}
         </SitemapLinks>
       </div>
     </>
@@ -124,8 +125,8 @@ function SocialLinks() {
 
 function Copyright() {
   return (
-    <div className="text-sm/6 font-mono text-gray-950">
-      &copy; {new Date().getFullYear()} Holmanworks Inc.
+    <div className="text-sm font-sans text-gray-950">
+      &copy; {new Date().getFullYear()} holmanworks Inc.
     </div>
   )
 }
@@ -134,33 +135,43 @@ export function Footer() {
   return (
     <footer>
         <Container className='bg-white'>
-          <PlusGrid className="pb-12">
+          <PlusGrid className="py-8">
 
-            <PlusGridRow>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 <div className="col-span-4 flex">
-                  <PlusGridItem className="pt-6 lg:pb-6">
-                    <Logo />
-                  </PlusGridItem>
+                  <div className="">
+                    <Link 
+                      href="/" 
+                      title="Home"
+                      className="flex items-center font-title text-base font-base text-gray-800"
+                    >
+                      <Image
+                        alt=""
+                        src="/holmanworks-icon/ho2.png"
+                        width={512}
+                        height={512}
+                        className="w-[28px] h-[28px] rounded-[0px] object-cover"
+                      />
+                    </Link>
+                  </div>
                 </div>
-                <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 pt-6">
+                <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-8">
                   <Sitemap />
                 </div>
               </div>
-            </PlusGridRow>
 
-            <PlusGridRow className="flex justify-between">
+            <div className="flex justify-between">
               <div>
-                <PlusGridItem className="py-4">
+                <div className="">
                   <Copyright />
-                </PlusGridItem>
+                </div>
               </div>
               {/* <div className="flex">
                 <PlusGridItem className="flex items-center gap-8">
                   <SocialLinks />
                 </PlusGridItem>
               </div> */}
-            </PlusGridRow>
+            </div>
 
           </PlusGrid>
         </Container>

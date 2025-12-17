@@ -114,7 +114,7 @@ function BentoSection() {
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/types/searching.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/furbo/04.gif)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
               <div className="" />
