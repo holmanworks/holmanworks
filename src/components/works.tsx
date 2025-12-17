@@ -87,7 +87,7 @@ const posts = [
     company: 'Forethought',
     title: 'Built the first Design System to scale AI product delivery',
     excerpt:
-      '',
+      'A shared design system that helped teams build faster and stay aligned.',
     date: '',
     url: 'https://www.figma.com/deck/DEzpolTOT8gKP8HftkDlNg/Forethought---Design-System?node-id=0-1&t=LNdpEKNbomz7I2AQ-1',
   },
