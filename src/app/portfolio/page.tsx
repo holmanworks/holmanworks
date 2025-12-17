@@ -110,12 +110,13 @@ const boardData = [
   {
     images: [
       "/screenshots/oursong/home.png",
+      "/screenshots/oursong/cardfront.png",
+      "/screenshots/oursong/cardback.png",
+      "/screenshots/oursong/card-animation.gif",
       "/screenshots/oursong/community.png",
       "/screenshots/oursong/chatroom.png",
       "/screenshots/oursong/wallet.png",
       "/screenshots/oursong/gift.png",
-      "/screenshots/oursong/cardfront.png",
-      "/screenshots/oursong/cardback.png",
       "/screenshots/oursong/market.png",
       "/screenshots/oursong/tasks.png",
       "/screenshots/oursong/voucherinfo.png",
