@@ -82,6 +82,26 @@ const posts = [
     url: 'https://www.figma.com/deck/vqRgmkSpDZRZ8iVEvjCSGs/Forethought---Assist---Generate-Response?node-id=0-1&t=ENggFx7sIwnLgn5U-1',
   },
   {
+    image: '/screenshots/ft-designsystem/cover.png',
+    icon: '/screenshots/ft-logo.svg',
+    company: 'Forethought',
+    title: 'Built the first Design System to scale AI product delivery',
+    excerpt:
+      '',
+    date: '',
+    url: 'https://www.figma.com/deck/DEzpolTOT8gKP8HftkDlNg/Forethought---Design-System?node-id=0-1&t=LNdpEKNbomz7I2AQ-1',
+  },
+  {
+    image: '/screenshots/furbo/cover.png',
+    icon: '/screenshots/furbo-logo.svg',
+    company: 'Furbo',
+    title: 'Simplifying IoT Setup and Onboarding for Dog Camera',
+    excerpt:
+      'A redesigned setup experience that cut failure rates, reduced returns, and boosted customer satisfaction.',
+    date: '',
+    url: 'https://www.figma.com/deck/b6g8xcEHwxGa37aMIOvCX2/Forethought---Widget---Live-Chat?node-id=0-1&t=NboPv9h40CztD7Wv-1',
+  },
+  {
     image: '/screenshots/ft-solve/cover_copy.png',
     icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
@@ -98,26 +118,6 @@ const posts = [
     title: 'Designing the AI to Human Chat Handoff',
     excerpt:
       '',
-    date: '',
-    url: 'https://www.figma.com/deck/b6g8xcEHwxGa37aMIOvCX2/Forethought---Widget---Live-Chat?node-id=0-1&t=NboPv9h40CztD7Wv-1',
-  },
-  {
-    image: '/screenshots/ft-designsystem/cover.png',
-    icon: '/screenshots/ft-logo.svg',
-    company: 'Forethought',
-    title: 'Built the first Design System to scale AI product delivery',
-    excerpt:
-      '',
-    date: '',
-    url: 'https://www.figma.com/deck/DEzpolTOT8gKP8HftkDlNg/Forethought---Design-System?node-id=0-1&t=oc3MBS21gSisOmlt-1',
-  },
-  {
-    image: '/screenshots/furbo/cover.png',
-    icon: '/screenshots/furbo-logo.svg',
-    company: 'Furbo',
-    title: 'Simplifying IoT Setup and Onboarding for Dog Camera',
-    excerpt:
-      'A redesigned setup experience that cut failure rates, reduced returns, and boosted customer satisfaction.',
     date: '',
     url: 'https://www.figma.com/deck/b6g8xcEHwxGa37aMIOvCX2/Forethought---Widget---Live-Chat?node-id=0-1&t=NboPv9h40CztD7Wv-1',
   },
