@@ -99,7 +99,7 @@ const posts = [
     excerpt:
       'A redesigned setup experience that cut failure rates, reduced returns, and boosted customer satisfaction.',
     date: '',
-    url: 'https://www.figma.com/deck/b6g8xcEHwxGa37aMIOvCX2/Forethought---Widget---Live-Chat?node-id=0-1&t=NboPv9h40CztD7Wv-1',
+    url: 'https://www.figma.com/deck/42vVWAtuG4yXEVqZxsH3Sg/Furbo---Dog-Camera-Setup---Onboarding?node-id=1-42&t=xGisIyi0BEfTj7Iw-1',
   },
   {
     image: '/screenshots/ft-solve/cover_copy.png',
