@@ -19,7 +19,7 @@ const boardData = [
       "/screenshots/ft-assist/modal.png",
     ],
     name: "Forethought Assist",
-    description: "Provides agents with AI-guided responses",
+    description: "Provides agents with AI-generated responses",
     category: "B2B",
     column: 2,
   },  

@@ -78,7 +78,7 @@ function BentoSection() {
             title=""
             description=""
             graphic={
-              <div className="h-full bg-[url(/screenshots/oursong/wallet.png)] bg-contain bg-no-repeat bg-center" />
+              <div className="h-full bg-[url(/screenshots/oursong/cardfront.png)] bg-contain bg-no-repeat bg-center" />
             }
             hoverGraphic={
               <div className="" />

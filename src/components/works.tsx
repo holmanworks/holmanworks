@@ -92,6 +92,16 @@ const posts = [
     url: 'https://www.figma.com/deck/DEzpolTOT8gKP8HftkDlNg/Forethought---Design-System?node-id=0-1&t=LNdpEKNbomz7I2AQ-1',
   },
   {
+    image: '/screenshots/oursong/cover.png',
+    icon: '/screenshots/oursong-logo.svg',
+    company: 'OurSong',
+    title: 'Reframing music NFTs as access passes for a fan community',
+    excerpt:
+      'A product pivot driven by low retention, shifting into ongoing fan experiences.',
+    date: '',
+    url: 'https://www.figma.com/deck/IcaTALblrJKgmuid5XKOjF/OurSong---Music-NFT?node-id=0-1&t=9VOVYoeRR0MB7kZv-1',
+  },
+  {
     image: '/screenshots/furbo/cover.png',
     icon: '/screenshots/furbo-logo.svg',
     company: 'Furbo',
