@@ -155,13 +155,13 @@ export function CaseStudies() {
 
 
               {/* Main content */}
-              <div className="flex gap-x-12">
+              <div className="flex flex-col gap-y-5 sm:flex-row sm:gap-x-12">
                 <div className="flex-1">
-                  <h2 className="text-4xl font-title font-normal text-gray-900 mb-3">
+                  <h2 className="text-2xl font-title font-normal text-gray-900 mb-3 sm:text-3xl">
                     {post.title}
                   </h2>
 
-                  <p className="text-lg font-sans font-normal text-gray-500">
+                  <p className="text-base font-sans font-normal text-gray-500 sm:text-lg">
                     {post.excerpt}
                   </p>
 
@@ -175,7 +175,7 @@ export function CaseStudies() {
                   src={post.image}
                   width={800}
                   height={800}
-                  className="w-[190px] h-[128px] object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="order-first aspect-[190/128] w-full object-cover transition-transform duration-300 group-hover:scale-105 sm:order-none sm:h-[128px] sm:w-[190px]"
                 />
               </div>
 
