@@ -67,7 +67,7 @@ const posts = [
     company: 'Forethought',
     title: 'Design the AI-Powered Workflow Logic for Customer Support',
     excerpt:
-      'A redesigned workflow builder that improved UX and drove over 50% of the company’s revenue.',
+      'Redesigned the workflow builder UX, contributing to over 50% of company revenue.',
     date: '',
     url: 'https://www.figma.com/deck/5w0jvYxCYQyJKzdIWtiLEh/Forethought---Customer-Service-Workflow-Builder?node-id=1-42&viewport=143%2C292%2C0.26&t=ofHpuCxLBTtub3y8-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
   },
@@ -152,24 +152,12 @@ export function CaseStudies() {
               rel="noopener noreferrer"
               className="group block py-8 first:pt-0 last:pb-0"
             >
-              {/* Company row */}
-              <div className="flex items-center gap-x-2 ml-[1px] mb-4">
-                <Image
-                  alt={post.company}
-                  src={post.icon}
-                  width={20}
-                  height={20}
-                  className="w-[20px] h-[20px] rounded-[2px] object-cover"
-                />
-                <div className="text-base font-sans font-normal text-gray-900">
-                  {post.company}
-                </div>
-              </div>
+
 
               {/* Main content */}
               <div className="flex gap-x-12">
                 <div className="flex-1">
-                  <h2 className="text-3xl font-title font-medium text-gray-900 mb-3">
+                  <h2 className="text-4xl font-title font-normal text-gray-900 mb-3">
                     {post.title}
                   </h2>
 
@@ -189,6 +177,20 @@ export function CaseStudies() {
                   height={800}
                   className="w-[190px] h-[128px] object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+              </div>
+
+              {/* Company row */}
+              <div className="flex items-center gap-x-2">
+                <Image
+                  alt={post.company}
+                  src={post.icon}
+                  width={20}
+                  height={20}
+                  className="w-[20px] h-[20px] object-cover"
+                />
+                <div className="text-base font-sans font-normal text-gray-900">
+                  {post.company}
+                </div>
               </div>
             </a>
           ))}
