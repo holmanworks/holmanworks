@@ -117,7 +117,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               >
                 <Image
                   alt=""
-                  src="/holmanworks-icon/ho2.png"
+                  src="/holmanworks-icon/ho.png"
                   width={512}
                   height={512}
                   className="w-[28px] h-[28px] rounded-[0px] object-cover"

@@ -2,7 +2,6 @@
 
 import { Container } from "@/components/container";
 import { Footer } from "@/components/footer";
-import { GradientBackground } from "@/components/gradient";
 import { Button } from "@/components/button";
 import { Navbar } from "@/components/navbar";
 import Masonry from "react-masonry-css";
@@ -11,18 +10,6 @@ import { useState, useEffect } from "react";
 const categories = ["All", "B2B", "B2C", "Design System", "Marketing", "Exhibition", "Merchandise"];
 
 const boardData = [
-  {
-    images: [
-      "/screenshots/ft-assist/click.png",
-      "/screenshots/ft-assist/writing.png",
-      "/screenshots/ft-assist/preview.png",
-      "/screenshots/ft-assist/modal.png",
-    ],
-    name: "Forethought Assist",
-    description: "Provides agents with AI-generated responses",
-    category: "B2B",
-    column: 2,
-  },  
   {
     images: [
       "/screenshots/ft-solve/1.png",
@@ -48,6 +35,18 @@ const boardData = [
     category: "B2B",
     column: 2,
   },
+  {
+    images: [
+      "/screenshots/ft-assist/click.png",
+      "/screenshots/ft-assist/writing.png",
+      "/screenshots/ft-assist/preview.png",
+      "/screenshots/ft-assist/modal.png",
+    ],
+    name: "Forethought Assist",
+    description: "Provides agents with AI-generated responses",
+    category: "B2B",
+    column: 2,
+  },  
   {
     images: [
       "/screenshots/ft-discover/dashboard.png",

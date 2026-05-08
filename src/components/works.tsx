@@ -65,17 +65,17 @@ const posts = [
     image: '/screenshots/ft-solve/cover.png',
     icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
-    title: 'Designing the AI-Powered Workflow Logic for Customer Support',
+    title: 'Design the AI-Powered Workflow Logic for Customer Support',
     excerpt:
       'A redesigned workflow builder that improved UX and drove over 50% of the company’s revenue.',
     date: '',
-    url: 'https://www.figma.com/deck/5w0jvYxCYQyJKzdIWtiLEh/Forethought---Customer-Service-Workflow-Builder?node-id=0-1&t=UURm1ds4UpMxTMBM-1',
+    url: '/casestudies/forethought-solve',
   },
   {
     image: '/screenshots/ft-assist/cover.png',
     icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
-    title: 'Designing the AI Response Experience for Human Agents',
+    title: 'Design the AI Response Experience for Human Agents',
     excerpt:
       'A generative AI copilot that helps human agents respond faster while staying in full control.',
     date: '',
@@ -95,7 +95,7 @@ const posts = [
     image: '/screenshots/oursong/cover.png',
     icon: '/screenshots/oursong-logo.svg',
     company: 'OurSong',
-    title: 'Reframing music NFTs as access passes for a fan community',
+    title: 'Reframe music NFTs as access passes for a fan community',
     excerpt:
       'A product pivot driven by low retention, shifting into ongoing fan experiences.',
     date: '',
@@ -105,7 +105,7 @@ const posts = [
     image: '/screenshots/furbo/cover.png',
     icon: '/screenshots/furbo-logo.svg',
     company: 'Furbo',
-    title: 'Simplifying IoT Setup and Onboarding for Dog Camera',
+    title: 'Simplify IoT Setup and Onboarding for Dog Camera',
     excerpt:
       'A redesigned setup experience that cut failure rates, reduced returns, and boosted customer satisfaction.',
     date: '',
@@ -115,7 +115,7 @@ const posts = [
     image: '/screenshots/ft-solve/cover_copy.png',
     icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
-    title: 'Creating Reusable Steps to Simplify Workflow Building',
+    title: 'Create Reusable Steps to Simplify Workflow Building',
     excerpt:
       'Helping admins and engineers save time through step reuse.',
     date: '',
@@ -125,7 +125,7 @@ const posts = [
     image: '/screenshots/ft-widget/cover_live.png',
     icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
-    title: 'Designing the AI to Human Chat Handoff',
+    title: 'Design the AI to Human Chat Handoff',
     excerpt:
       '',
     date: '',
@@ -169,7 +169,7 @@ export function CaseStudies() {
               {/* Main content */}
               <div className="flex gap-x-12">
                 <div className="flex-1">
-                  <h2 className="text-3xl font-display font-extrabold text-gray-900 mb-3">
+                  <h2 className="text-3xl font-title font-medium text-gray-900 mb-3">
                     {post.title}
                   </h2>
 

@@ -48,11 +48,11 @@ module.exports = {
           letterSpacing: '-.5px',
         }],
         '5xl':['36px',{
-          lineHeight: '40px',
+          lineHeight: '38px',
           letterSpacing: '-.5px',
         }],
         '6xl':['40px',{
-          lineHeight: '40px',
+          lineHeight: '42px',
           letterSpacing: '-1px',
         }],
         '7xl':['48px',{

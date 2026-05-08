@@ -23,7 +23,8 @@ const testimonials = [
     img: '/screenshots/case-solve.png',
     name: 'Forethought - Workflow Builder',
     title: 'Designing the AI-Powered Workflow Logic for Customer Support',
-    url: 'https://www.figma.com/deck/5w0jvYxCYQyJKzdIWtiLEh/Forethought----Customer-Service-Workflow-Builder?node-id=1-42&t=gc3zJtqx0pY88Ayp-1',
+    url: 'https://www.figma.com/deck/5w0jvYxCYQyJKzdIWtiLEh/Forethought---Customer-Service-Workflow-Builder?node-id=1-42&viewport=143%2C292%2C0.26&t=ofHpuCxLBTtub3y8-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+    // url: '/casestudies/forethought-solve',
   },
   {
     img: '/screenshots/case-assist.png',
@@ -182,7 +183,7 @@ export function CaseStudies() {
       <Container>
         <div className="flex items-center gap-4">
           {/* Title */}
-          <Link href="/case" aria-label="Case Studies" className="w-full">
+          <Link href="/casestudies" aria-label="Case Studies" className="w-full">
             <div className="text-xl font-bold font-mono text-gray-800 flex items-center gap-x-2 hover:gap-x-4 transition-all duration-300 ease-in-out">
               Case Studies
               <ArrowRightIcon className="size-5" />
