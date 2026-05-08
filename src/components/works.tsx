@@ -69,7 +69,7 @@ const posts = [
     excerpt:
       'A redesigned workflow builder that improved UX and drove over 50% of the company’s revenue.',
     date: '',
-    url: '/casestudies/forethought-solve',
+    url: 'https://www.figma.com/deck/5w0jvYxCYQyJKzdIWtiLEh/Forethought---Customer-Service-Workflow-Builder?node-id=1-42&viewport=143%2C292%2C0.26&t=ofHpuCxLBTtub3y8-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
   },
   {
     image: '/screenshots/ft-assist/cover.png',
