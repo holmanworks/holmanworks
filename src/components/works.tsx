@@ -65,7 +65,7 @@ const posts = [
     image: '/screenshots/ft-solve/cover.png',
     icon: '/screenshots/ft-logo.svg',
     company: 'Forethought',
-    title: 'Design the AI-Powered Workflow Logic for Customer Support',
+    title: 'Design the AI Workflow Logic for Customer Support',
     excerpt:
       'Redesigned the workflow builder UX, contributing to over 50% of company revenue.',
     date: '',
@@ -80,16 +80,6 @@ const posts = [
       'A generative AI copilot that helps human agents respond faster while staying in full control.',
     date: '',
     url: 'https://www.figma.com/deck/vqRgmkSpDZRZ8iVEvjCSGs/Forethought---Assist---Generate-Response?node-id=0-1&t=ENggFx7sIwnLgn5U-1',
-  },
-  {
-    image: '/screenshots/ft-designsystem/cover.png',
-    icon: '/screenshots/ft-logo.svg',
-    company: 'Forethought',
-    title: 'Built the first Design System to scale AI product delivery',
-    excerpt:
-      'A shared design system that helped teams build faster and stay aligned.',
-    date: '',
-    url: 'https://www.figma.com/deck/DEzpolTOT8gKP8HftkDlNg/Forethought---Design-System?node-id=0-1&t=LNdpEKNbomz7I2AQ-1',
   },
   {
     image: '/screenshots/oursong/cover.png',
@@ -110,6 +100,16 @@ const posts = [
       'A redesigned setup experience that cut failure rates, reduced returns, and boosted customer satisfaction.',
     date: '',
     url: 'https://www.figma.com/deck/42vVWAtuG4yXEVqZxsH3Sg/Furbo---Dog-Camera-Setup---Onboarding?node-id=1-42&t=xGisIyi0BEfTj7Iw-1',
+  },
+  {
+    image: '/screenshots/ft-designsystem/cover.png',
+    icon: '/screenshots/ft-logo.svg',
+    company: 'Forethought',
+    title: 'Built the first Design System to scale AI product delivery',
+    excerpt:
+      'A shared design system that helped teams build faster and stay aligned.',
+    date: '',
+    url: 'https://www.figma.com/deck/DEzpolTOT8gKP8HftkDlNg/Forethought---Design-System?node-id=0-1&t=LNdpEKNbomz7I2AQ-1',
   },
   {
     image: '/screenshots/ft-solve/cover_copy.png',
