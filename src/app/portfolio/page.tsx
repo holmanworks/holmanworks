@@ -12,7 +12,6 @@ const categories = ["All", "B2B", "B2C", "Design System", "Marketing", "Exhibiti
 const boardData = [
   {
     images: [
-      "/screenshots/ft-solve/1.png",
       "/screenshots/ft-solve/builder.png",
       "/screenshots/ft-solve/translation.png",
       "/screenshots/ft-solve/action.png",
@@ -24,7 +23,6 @@ const boardData = [
       "/screenshots/ft-solve/prediction.png",
       "/screenshots/ft-solve/dashboard.png",
       "/screenshots/ft-widget/configuration.png",
-      "/screenshots/ft-solve/2.png",
       "/screenshots/ft-solve/preview2.png",
       "/screenshots/ft-solve/2-2.png",
       "/screenshots/ft-solve/2-3.png",
